@@ -1,0 +1,31 @@
+.sticker {
+  padding: 16px 17px 16px 18px;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 100%;
+  color: #0F0E0E;
+  box-shadow: 0px 8px 8px 0px rgba(0, 0, 0, 0.20);
+  background-color: #56C676;
+  border-radius: 0px 12px 12px 0px;
+  svg{
+    margin: 0 0 0 5px;
+  }
+  &--four {
+    background-color: #F0B020;
+  }
+
+  &--three {
+    background-color: #F59236;
+  }
+
+  &--two {
+    background-color: #F04520;
+  }
+
+  &--one {
+    background-color: #FF3D00;
+  }
+}
