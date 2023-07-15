@@ -1,18 +1,21 @@
-html{
+html {
   box-sizing: border-box;
   height: 100%;
 }
 
-*,*::before, *::after{
+*,
+*::before,
+*::after {
   box-sizing: inherit;
 }
 
-a{
+a {
   text-decoration: none;
   color: inherit;
 }
+
 ul,
-li{
+li {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -23,14 +26,16 @@ h2,
 h3,
 h4,
 h5,
-h6{
+h6 {
   margin: 0;
   font-size: inherit;
 }
-p{
+
+p {
   margin: 0;
 }
-body{
+
+body {
   height: 100%;
   min-width: 320px;
   overflow-x: hidden;
@@ -39,6 +44,22 @@ body{
   color: #fff;
 }
 
+body.lock {
+  position: relative;
+  overflow: hidden;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.80);
+    z-index: 1;
+  }
+}
 .wrapper {
   display: flex;
   flex-direction: column;
@@ -53,14 +74,14 @@ body{
   flex: 0 0 auto;
 }
 
-.container{
+.container {
   max-width: 1275px;
   padding: 0px 25px;
   margin: 0 auto;
 }
-.container-fluid{
+
+.container-fluid {
   max-width: 1400px;
   margin: 0 auto;
   padding: 0 15px;
 }
-

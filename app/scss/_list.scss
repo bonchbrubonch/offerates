@@ -24,7 +24,7 @@
   }
 
   p {
-    margin: 0 0 16px 0;
+    margin: 0 0 8px 0;
     font-size: 14px;
     font-weight: 500;
     line-height: 20px;
@@ -37,9 +37,11 @@
 
     ul {
       display: flex;
+      flex-wrap: wrap;
     }
 
     li {
+      margin: 8px 8px 0 0;
       padding: 10px 12px;
       border-radius: 4px;
       background-color: rgba(59, 70, 83, 0.40);
@@ -47,13 +49,10 @@
       font-weight: 500;
       line-height: 120%;
     }
-
-    li+li {
-      margin: 0 0 0 8px;
-    }
   }
 
   &__link {
+    margin: 8px 0 0 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -62,6 +61,7 @@
     border: 1px solid #fff;
     border-radius: 50%;
     transform: rotate(-90deg);
+    flex-shrink: 0;
   }
 }
 
@@ -80,9 +80,10 @@
     padding: 130px 0 0 0;
     margin: 0 0 25px 25px;
     width: calc(25% - 25px);
+    min-width: 287.5px;
     border: 16px solid rgba(86, 198, 118, 0.20);
     border-radius: 50%;
-
+    flex-shrink: 0;
   }
 
   li::before {

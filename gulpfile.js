@@ -20,6 +20,7 @@ function browsersync() {
 
 function scripts() {
   return src([
+   
     
     'app/js/app.js',
   ])
@@ -32,7 +33,6 @@ function scripts() {
 function styles() {
   return src([
   'node_modules/normalize.css/normalize.css',
-
   'app/scss/style.scss',
   ])
   .pipe(sass({
