@@ -9,7 +9,7 @@ $(function () {
     $(".header__box").removeClass("open");
     $("body").removeClass("lock");
   });
-  
+
   $(".currency").select2({
     minimumResultsForSearch: -1
   });
@@ -27,14 +27,40 @@ $(function () {
   });
 
   $(".search").select2({
-    // multiple: true
-    // placeholder: "Select a state",
+    placeholder: "Поиск по офферу",
   });
+  
+
 
   $('.offers__bottom-like').on('click', function () {
     $(this).toggleClass('active');
   });
 
 
+  $(function () {
+ 
+    $(".rateYo").rateYo({
+      starWidth: "20px",
+      ratedFill: "#F0B020",
+      spacing: "2px",
+      rating: 5,
+      readOnly: true,
+      onChange: function (rating, rateYoInstance) {
+   
+        $(this).next().text(rating);
+      }
+
+      
+    });
+  });
+
+    $("#rateYo-2").rateYo({
+      starWidth: "20px",
+      ratedFill: "#F0B020",
+      spacing: "2px",
+      rating: 5,
+   
+    });
+  
 
 });

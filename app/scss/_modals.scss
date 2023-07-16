@@ -1,0 +1,72 @@
+.fancybox-slide--html {
+  padding: 15px;
+}
+
+
+.modal-1 {
+  display: none;
+  max-width: 515px;
+  width: 100%;
+  padding: 48px 48px 48px 48px;
+  border-radius: 8px;
+  border: 1px solid #383838;
+  background-color: #1F1F1F;
+
+  .modal-inner {
+    position: relative;
+    padding: 25px 0 25px 32px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 8px;
+      border-radius: 8px;
+      background-color: #56c676;
+    }
+  }
+
+  h6 {
+    margin: 0 0 15px 0;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 100%;
+  }
+
+  p {
+    margin: 0 0 25px 0;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 160%;
+  }
+
+  ul {
+    display: flex;
+    align-items: center;
+
+    li {
+      margin: 0 24px 0 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 56px;
+      height: 56px;
+      background-color: #383838;
+      border-radius: 50%;
+
+      a {
+        display: block;
+        width: 38px;
+        height: 38px;
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: contain;
+        }
+      }
+    }
+  }
+}

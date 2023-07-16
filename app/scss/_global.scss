@@ -47,6 +47,7 @@ body {
 body.lock {
   position: relative;
   overflow: hidden;
+
   &::before {
     content: "";
     position: absolute;
@@ -60,6 +61,7 @@ body.lock {
     z-index: 1;
   }
 }
+
 .wrapper {
   display: flex;
   flex-direction: column;
@@ -84,4 +86,106 @@ body.lock {
   max-width: 1400px;
   margin: 0 auto;
   padding: 0 15px;
+}
+
+.link-active {
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    bottom: -12px;
+    left: -16px;
+    background-color: #56c676;
+    height: 2px;
+    width: calc(100% + 30px);
+  }
+}
+
+.page-title {
+  padding: 48px 0 10px;
+
+  h2 {
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 100%;
+  }
+}
+
+/*start breadcrumbs=========*/
+.breadcrumbs {
+  background-color: transparent;
+
+  &__inner {
+    padding: 10px 0px;
+    overflow: hidden;
+    max-width: 1400px;
+  }
+
+  &__list {
+    li {
+      display: inline;
+      position: relative;
+      line-height: 20px;
+      color: #fff;
+      font-size: 16px;
+      line-height: 100%;
+
+      &+li {
+        padding-left: 40px;
+
+        &::before {
+          content: "";
+          height: 4px;
+          width: 4px;
+          border-radius: 50%;
+          position: absolute;
+          left: 15px;
+          top: 8px;
+          background-color: #fff;
+        }
+      }
+
+      a {
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+
+      &:last-child {
+        color: #fff;
+      }
+    }
+  }
+}
+
+/*end breadcrumbs=========*/
+.all-offers {
+  display: flex;
+  width: fit-content;
+  position: relative;
+  font-size: 18px;
+  font-weight: 600;
+
+  &::before {
+    position: absolute;
+    content: "";
+    bottom: -12px;
+    left: 0;
+    background-color: #56c676;
+    height: 2px;
+    width: 100%;
+  }
+}
+
+.page-offers {
+  .breadcrumbs {
+    margin: 0 0 80px 0;
+  }
+}
+
+.offers-detail {
+  .breadcrumbs {
+    margin: 0 0 35px 0;
+  }
 }

@@ -141,3 +141,116 @@
     line-height: 160%;
   }
 }
+
+.reviews-list {
+  li {
+    margin: 0 0 17px 0;
+    padding: 24px 24px 24px 24px;
+    border: 1px solid #383838;
+    background-color: #1F1F1F;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+
+  &__top {
+    margin: 0 0 24px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__avatar {
+    display: flex;
+    align-items: center;
+  }
+
+  &__avatar-img {
+    margin: 0 10px 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    flex-shrink: 0;
+    background-color: #3B4653;
+    border-radius: 50%;
+    overflow: hidden;
+
+    img {
+      width: 20px;
+      height: 20px;
+      object-fit: contain;
+    }
+  }
+
+  &__date {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+  }
+
+  p {
+    margin: 0 0 25px 0;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+  }
+
+  &__bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__rate {
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+  }
+
+  .counter {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+  }
+
+  &__likes {
+    display: flex;
+    align-items: center;
+
+    span {
+      display: block;
+      margin: 0 8px 0 0;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 14px;
+      color: #fff;
+    }
+
+    button {
+      padding: 0;
+      display: flex;
+      align-items: center;
+      background-color: transparent;
+      outline: none;
+      border: none;
+      cursor: pointer;
+    }
+  }
+
+  &__like {
+    margin: 0 24px 0 0;
+  }
+
+  &__like.active {
+   svg{
+     fill: #56C676;
+   }
+  }
+
+  &__dislike.active {
+    svg{
+      fill: #FF3D00;
+    }
+  }
+}
