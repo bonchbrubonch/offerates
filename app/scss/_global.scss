@@ -160,6 +160,22 @@ body.lock {
 }
 
 /*end breadcrumbs=========*/
+.border-left {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 4px;
+    border-radius: 8px;
+    background-color: #56c676;
+  }
+
+}
+
 .all-offers {
   display: flex;
   width: fit-content;
@@ -185,6 +201,12 @@ body.lock {
 }
 
 .offers-detail {
+  .breadcrumbs {
+    margin: 0 0 35px 0;
+  }
+}
+
+.page-article {
   .breadcrumbs {
     margin: 0 0 35px 0;
   }
