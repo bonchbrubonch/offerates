@@ -5,6 +5,8 @@
 @import "list";
 @import "sticker";
 @import "modals";
+@import "slider";
+@import "form";
 
 /*start header========*/
 .header {
@@ -20,6 +22,7 @@
   &__logo {
     width: 248px;
     height: 64px;
+    z-index: 1;
 
     img,
     svg {
@@ -1103,12 +1106,19 @@
 
 /*start page-404=============*/
 .page-404 {
+  .content {
+    background-position: top left;
+    background-size: contain;
+  }
+
   .intro {
     padding: 24px 0 0px;
   }
-  .list-blog>li{
+
+  .list-blog>li {
     display: block !important;
   }
+
   .intro__left {
     margin: 0 24px 0 0;
     padding: 6px 0 24px 0px;
@@ -1144,10 +1154,102 @@
 
 /*end page-404=============*/
 
+/*start line========*/
+.wrap {
+  position: relative;
+  max-width: 100%;
+  margin: auto;
+  background-color: #1F1F1F;
 
+  &::before {
+    content: "";
+    position: absolute;
+    top: -122px;
+    left: -18px;
+    width: 480px;
+    height: 480px;
+    background-image: url("../images/dest/content/bg-404.png");
+    background-repeat: no-repeat;
+    background-position: center;
 
+  }
+}
 
+.items-wrap {
+  position: relative;
+  display: flex;
+  overflow: hidden;
+  user-select: none;
+  gap: 20px;
+}
 
+.items {
+  flex-shrink: 0;
+  display: flex;
+  gap: 20px;
+  justify-content: space-around;
+  min-width: 100%;
+}
+
+.item {
+  padding: 0 0 0 20px;
+  position: relative;
+  height: 48px;
+  flex: 0 0 auto;
+  width: fit-content;
+  border-radius: 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #56C676;
+  transition: all 0.1s ease-in-out;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: -3px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 10px;
+    height: 1px;
+    background-color: #56C676;
+  }
+}
+
+.marquee {
+  animation: scroll 20s linear infinite;
+}
+
+.reverce {
+  animation-direction: reverse;
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(calc(-100% - 20px));
+  }
+}
+
+/*end line========*/
+
+.slider-wrapper {
+  padding: 20px 0 45px;
+}
+
+.form-wrapper {
+  padding: 45px 0 110px;
+  background-image: url("../images/dest/icons/bg-form.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center 38%;
+}
 
 
 
@@ -1205,6 +1307,7 @@
   border-radius: 32px 32px 0px 0px;
   box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.05);
   background-color: #1F1F1F;
+  overflow: hidden;
 
   &__inner {
     display: flex;

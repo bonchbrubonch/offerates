@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css"
+    integrity="sha512-H9jrZiiopUdsLpg94A333EfumgUBpO9MdbxStdeITo+KEIMaNfHNvwyjjDJb+ERPaRS6DpyRlKbvPUasNItRyw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/rateYo/2.3.2/jquery.rateyo.min.css">
+
+  <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+    integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="css/app.min.css">
+</head>
+
+<body>
+
+  <div class="wrapper">
+    <div class="content" style="background-image: url('images/dest/content/bg-registration.png');">
+      <header class="header">
+        <div class="container">
+          <div class="header__inner">
+            <a href="#" class="header__logo">
+              <img src="images/dest/icons/logo.svg" alt="logo">
+            </a>
+            <div class="header__box">
+              <button class="header__box-close"></button>
+              <a href="#" class="header__logo-mob">
+                <img src="images/dest/icons/logo.svg" alt="logo">
+              </a>
+              <a href="#" class="header__all-offers">Все офферы</a>
+              <a href="#" class="header__all-soc">Все сети</a>
+              <a href="#" class="header__favorite">
+                <span>Избранное</span>
+                <svg width="22" height="20" viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M19.84 2.60999C19.3292 2.099 18.7228 1.69364 18.0554 1.41708C17.3879 1.14052 16.6725 0.998169 15.95 0.998169C15.2275 0.998169 14.5121 1.14052 13.8446 1.41708C13.1772 1.69364 12.5708 2.099 12.06 2.60999L11 3.66999L9.94 2.60999C8.9083 1.5783 7.50903 0.998704 6.05 0.998704C4.59096 0.998704 3.19169 1.5783 2.16 2.60999C1.1283 3.64169 0.548706 5.04096 0.548706 6.49999C0.548706 7.95903 1.1283 9.3583 2.16 10.39L3.22 11.45L11 19.23L18.78 11.45L19.84 10.39C20.351 9.87924 20.7563 9.27281 21.0329 8.60535C21.3095 7.93789 21.4518 7.22248 21.4518 6.49999C21.4518 5.77751 21.3095 5.0621 21.0329 4.39464C20.7563 3.72718 20.351 3.12075 19.84 2.60999Z"
+                    stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </a>
+              <div class="header__currency select">
+                <select class="currency" id="currency" required name="currency">
+                  <option>USD</option>
+                  <option>EUR</option>
+                  <option>UAH</option>
+                  <option>TNG</option>
+                </select>
+              </div>
+              <div class="header__languege select">
+                <select class="language" id="language" required name="language">
+                  <option>RU</option>
+                  <option>UA</option>
+                  <option>EN</option>
+                </select>
+              </div>
+              <button class="header__enter btn" data-fancybox data-src="#modal-1">
+                Войти
+              </button>
+            </div>
+            <button class="header__enter-mob btn" data-fancybox data-src="#modal-1">
+              Войти
+            </button>
+            <button class="header__menu-btn">
+              <span></span>
+            </button>
+          </div>
+        </div>
+      </header>
+      <div class="wrap">
+        <div class="items-wrap">
+          <div class="items marquee">
+            <div class="item">Lorem ipsum dolor sit amet consectetur. Amet varius mi vestibulum tellus bibendum risus
+              posuere dui</div>
+            <div class="item">Lorem ipsum dolor sit amet consectetur. Amet varius mi vestibulum tellus bibendum risus
+              posuere dui</div>
+            <div class="item">Lorem ipsum dolor sit amet consectetur. Amet varius mi vestibulum tellus bibendum risus
+              posuere dui</div>
+          </div>
+          <div aria-hidden="true" class="items marquee">
+            <div class="item">Lorem ipsum dolor sit amet consectetur. Amet varius mi vestibulum tellus bibendum risus
+              posuere dui</div>
+            <div class="item">Lorem ipsum dolor sit amet consectetur. Amet varius mi vestibulum tellus bibendum risus
+              posuere dui</div>
+            <div class="item">Lorem ipsum dolor sit amet consectetur. Amet varius mi vestibulum tellus bibendum risus
+              posuere dui</div>
+          </div>
+        </div>
+      </div>
+
+      <section class="slider-wrapper">
+        <div class="container">
+          <div class="slider">
+            <div class="slider__item">
+              <div class="slider__item-inner">
+                <div class="slider__item-left">
+                  <h2>
+                    Програмный текст рекламного
+                    баннера для рекламодателя
+                  </h2>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur. Amet varius mi vestibulum tellus bibendum risus posuere dui.
+                    Sit vulputate orci posuere arcu viverra in tempor
+                  </p>
+                  <a href="#" class="btn btn--green">
+                    Зарегистрироваться <span>
+                      <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M18.0394 2.1028C18.0328 2.07074 18.0171 2.04125 17.9943 2.01779C17.9715 1.99433 17.9424 1.97788 17.9105 1.97038C15.7863 1.45085 10.8793 3.30202 8.21795 5.96139C7.74364 6.43181 7.31115 6.94259 6.92537 7.48796C6.10506 7.41374 5.28475 7.47624 4.58631 7.78092C2.61405 8.64811 2.04022 10.913 1.88006 11.8852C1.87138 11.9385 1.87509 11.9931 1.89089 12.0447C1.9067 12.0963 1.93417 12.1436 1.97119 12.1828C2.0082 12.2221 2.05377 12.2524 2.10435 12.2712C2.15494 12.29 2.20918 12.297 2.26287 12.2915L5.42967 11.9438C5.43186 12.1827 5.4462 12.4213 5.47264 12.6587C5.48917 12.8227 5.56238 12.9759 5.67967 13.0919L6.90584 14.318C7.02187 14.4354 7.17521 14.5086 7.33944 14.5251C7.57541 14.5514 7.81256 14.5657 8.04998 14.568L7.70272 17.7321C7.6973 17.7857 7.70428 17.8399 7.72312 17.8904C7.74197 17.9409 7.77217 17.9864 7.8114 18.0233C7.85063 18.0603 7.89783 18.0877 7.94936 18.1036C8.00089 18.1194 8.05537 18.1231 8.10858 18.1145C9.08123 17.9583 11.3508 17.3844 12.2129 15.4126C12.5176 14.7133 12.5801 13.8973 12.5097 13.0809C13.0567 12.6955 13.569 12.263 14.0406 11.7883C16.7117 9.1321 18.5512 4.33288 18.0394 2.1028ZM11.6664 8.34733C11.4331 8.11408 11.2742 7.81687 11.2098 7.49331C11.1454 7.16974 11.1784 6.83435 11.3046 6.52955C11.4309 6.22474 11.6447 5.96422 11.919 5.78092C12.1933 5.59763 12.5158 5.4998 12.8457 5.4998C13.1756 5.4998 13.4981 5.59763 13.7724 5.78092C14.0467 5.96422 14.2605 6.22474 14.3867 6.52955C14.513 6.83435 14.546 7.16974 14.4816 7.49331C14.4172 7.81687 14.2583 8.11408 14.025 8.34733C13.8702 8.50241 13.6864 8.62544 13.4841 8.70939C13.2817 8.79333 13.0648 8.83654 12.8457 8.83654C12.6266 8.83654 12.4097 8.79333 12.2073 8.70939C12.005 8.62544 11.8211 8.50241 11.6664 8.34733Z"
+                          stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+                        <path
+                          d="M4.28281 13.75C3.8934 13.7978 3.53113 13.9743 3.25352 14.2516C2.56523 14.9422 2.5 17.5 2.5 17.5C2.5 17.5 5.05937 17.4348 5.74805 16.7457C6.0264 16.4685 6.20323 16.1056 6.25 15.7156"
+                          stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+                      </svg>
+                    </span>
+                  </a>
+                </div>
+                <div class="slider__item-right">
+                  <div class="slider__item-img">
+                    <img src="images/dest/icons/banner-1.svg" alt="banner">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="slider__item">
+              <div class="slider__item-inner">
+                <div class="slider__item-left">
+                  <h2>
+                    Програмный текст рекламного
+                    баннера для рекламодателя
+                  </h2>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur. Amet varius mi vestibulum tellus bibendum risus posuere dui.
+                    Sit vulputate orci posuere arcu viverra in tempor
+                  </p>
+                  <a href="#" class="btn btn--green">
+                    Зарегистрироваться <span>
+                      <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M18.0394 2.1028C18.0328 2.07074 18.0171 2.04125 17.9943 2.01779C17.9715 1.99433 17.9424 1.97788 17.9105 1.97038C15.7863 1.45085 10.8793 3.30202 8.21795 5.96139C7.74364 6.43181 7.31115 6.94259 6.92537 7.48796C6.10506 7.41374 5.28475 7.47624 4.58631 7.78092C2.61405 8.64811 2.04022 10.913 1.88006 11.8852C1.87138 11.9385 1.87509 11.9931 1.89089 12.0447C1.9067 12.0963 1.93417 12.1436 1.97119 12.1828C2.0082 12.2221 2.05377 12.2524 2.10435 12.2712C2.15494 12.29 2.20918 12.297 2.26287 12.2915L5.42967 11.9438C5.43186 12.1827 5.4462 12.4213 5.47264 12.6587C5.48917 12.8227 5.56238 12.9759 5.67967 13.0919L6.90584 14.318C7.02187 14.4354 7.17521 14.5086 7.33944 14.5251C7.57541 14.5514 7.81256 14.5657 8.04998 14.568L7.70272 17.7321C7.6973 17.7857 7.70428 17.8399 7.72312 17.8904C7.74197 17.9409 7.77217 17.9864 7.8114 18.0233C7.85063 18.0603 7.89783 18.0877 7.94936 18.1036C8.00089 18.1194 8.05537 18.1231 8.10858 18.1145C9.08123 17.9583 11.3508 17.3844 12.2129 15.4126C12.5176 14.7133 12.5801 13.8973 12.5097 13.0809C13.0567 12.6955 13.569 12.263 14.0406 11.7883C16.7117 9.1321 18.5512 4.33288 18.0394 2.1028ZM11.6664 8.34733C11.4331 8.11408 11.2742 7.81687 11.2098 7.49331C11.1454 7.16974 11.1784 6.83435 11.3046 6.52955C11.4309 6.22474 11.6447 5.96422 11.919 5.78092C12.1933 5.59763 12.5158 5.4998 12.8457 5.4998C13.1756 5.4998 13.4981 5.59763 13.7724 5.78092C14.0467 5.96422 14.2605 6.22474 14.3867 6.52955C14.513 6.83435 14.546 7.16974 14.4816 7.49331C14.4172 7.81687 14.2583 8.11408 14.025 8.34733C13.8702 8.50241 13.6864 8.62544 13.4841 8.70939C13.2817 8.79333 13.0648 8.83654 12.8457 8.83654C12.6266 8.83654 12.4097 8.79333 12.2073 8.70939C12.005 8.62544 11.8211 8.50241 11.6664 8.34733Z"
+                          stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+                        <path
+                          d="M4.28281 13.75C3.8934 13.7978 3.53113 13.9743 3.25352 14.2516C2.56523 14.9422 2.5 17.5 2.5 17.5C2.5 17.5 5.05937 17.4348 5.74805 16.7457C6.0264 16.4685 6.20323 16.1056 6.25 15.7156"
+                          stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+                      </svg>
+                    </span>
+                  </a>
+                </div>
+                <div class="slider__item-right">
+                  <div class="slider__item-img">
+                    <img src="images/dest/icons/banner-1.svg" alt="banner">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="slider__item">
+              <div class="slider__item-inner">
+                <div class="slider__item-left">
+                  <h2>
+                    Програмный текст рекламного
+                    баннера для рекламодателя
+                  </h2>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur. Amet varius mi vestibulum tellus bibendum risus posuere dui.
+                    Sit vulputate orci posuere arcu viverra in tempor
+                  </p>
+                  <a href="#" class="btn btn--green">
+                    Зарегистрироваться <span>
+                      <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M18.0394 2.1028C18.0328 2.07074 18.0171 2.04125 17.9943 2.01779C17.9715 1.99433 17.9424 1.97788 17.9105 1.97038C15.7863 1.45085 10.8793 3.30202 8.21795 5.96139C7.74364 6.43181 7.31115 6.94259 6.92537 7.48796C6.10506 7.41374 5.28475 7.47624 4.58631 7.78092C2.61405 8.64811 2.04022 10.913 1.88006 11.8852C1.87138 11.9385 1.87509 11.9931 1.89089 12.0447C1.9067 12.0963 1.93417 12.1436 1.97119 12.1828C2.0082 12.2221 2.05377 12.2524 2.10435 12.2712C2.15494 12.29 2.20918 12.297 2.26287 12.2915L5.42967 11.9438C5.43186 12.1827 5.4462 12.4213 5.47264 12.6587C5.48917 12.8227 5.56238 12.9759 5.67967 13.0919L6.90584 14.318C7.02187 14.4354 7.17521 14.5086 7.33944 14.5251C7.57541 14.5514 7.81256 14.5657 8.04998 14.568L7.70272 17.7321C7.6973 17.7857 7.70428 17.8399 7.72312 17.8904C7.74197 17.9409 7.77217 17.9864 7.8114 18.0233C7.85063 18.0603 7.89783 18.0877 7.94936 18.1036C8.00089 18.1194 8.05537 18.1231 8.10858 18.1145C9.08123 17.9583 11.3508 17.3844 12.2129 15.4126C12.5176 14.7133 12.5801 13.8973 12.5097 13.0809C13.0567 12.6955 13.569 12.263 14.0406 11.7883C16.7117 9.1321 18.5512 4.33288 18.0394 2.1028ZM11.6664 8.34733C11.4331 8.11408 11.2742 7.81687 11.2098 7.49331C11.1454 7.16974 11.1784 6.83435 11.3046 6.52955C11.4309 6.22474 11.6447 5.96422 11.919 5.78092C12.1933 5.59763 12.5158 5.4998 12.8457 5.4998C13.1756 5.4998 13.4981 5.59763 13.7724 5.78092C14.0467 5.96422 14.2605 6.22474 14.3867 6.52955C14.513 6.83435 14.546 7.16974 14.4816 7.49331C14.4172 7.81687 14.2583 8.11408 14.025 8.34733C13.8702 8.50241 13.6864 8.62544 13.4841 8.70939C13.2817 8.79333 13.0648 8.83654 12.8457 8.83654C12.6266 8.83654 12.4097 8.79333 12.2073 8.70939C12.005 8.62544 11.8211 8.50241 11.6664 8.34733Z"
+                          stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+                        <path
+                          d="M4.28281 13.75C3.8934 13.7978 3.53113 13.9743 3.25352 14.2516C2.56523 14.9422 2.5 17.5 2.5 17.5C2.5 17.5 5.05937 17.4348 5.74805 16.7457C6.0264 16.4685 6.20323 16.1056 6.25 15.7156"
+                          stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+                      </svg>
+                    </span>
+                  </a>
+                </div>
+                <div class="slider__item-right">
+                  <div class="slider__item-img">
+                    <img src="images/dest/icons/banner-1.svg" alt="banner">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="slider__item">
+              <div class="slider__item-inner">
+                <div class="slider__item-left">
+                  <h2>
+                    Програмный текст рекламного
+                    баннера для рекламодателя
+                  </h2>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur. Amet varius mi vestibulum tellus bibendum risus posuere dui.
+                    Sit vulputate orci posuere arcu viverra in tempor
+                  </p>
+                  <a href="#" class="btn btn--green">
+                    Зарегистрироваться <span>
+                      <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M18.0394 2.1028C18.0328 2.07074 18.0171 2.04125 17.9943 2.01779C17.9715 1.99433 17.9424 1.97788 17.9105 1.97038C15.7863 1.45085 10.8793 3.30202 8.21795 5.96139C7.74364 6.43181 7.31115 6.94259 6.92537 7.48796C6.10506 7.41374 5.28475 7.47624 4.58631 7.78092C2.61405 8.64811 2.04022 10.913 1.88006 11.8852C1.87138 11.9385 1.87509 11.9931 1.89089 12.0447C1.9067 12.0963 1.93417 12.1436 1.97119 12.1828C2.0082 12.2221 2.05377 12.2524 2.10435 12.2712C2.15494 12.29 2.20918 12.297 2.26287 12.2915L5.42967 11.9438C5.43186 12.1827 5.4462 12.4213 5.47264 12.6587C5.48917 12.8227 5.56238 12.9759 5.67967 13.0919L6.90584 14.318C7.02187 14.4354 7.17521 14.5086 7.33944 14.5251C7.57541 14.5514 7.81256 14.5657 8.04998 14.568L7.70272 17.7321C7.6973 17.7857 7.70428 17.8399 7.72312 17.8904C7.74197 17.9409 7.77217 17.9864 7.8114 18.0233C7.85063 18.0603 7.89783 18.0877 7.94936 18.1036C8.00089 18.1194 8.05537 18.1231 8.10858 18.1145C9.08123 17.9583 11.3508 17.3844 12.2129 15.4126C12.5176 14.7133 12.5801 13.8973 12.5097 13.0809C13.0567 12.6955 13.569 12.263 14.0406 11.7883C16.7117 9.1321 18.5512 4.33288 18.0394 2.1028ZM11.6664 8.34733C11.4331 8.11408 11.2742 7.81687 11.2098 7.49331C11.1454 7.16974 11.1784 6.83435 11.3046 6.52955C11.4309 6.22474 11.6447 5.96422 11.919 5.78092C12.1933 5.59763 12.5158 5.4998 12.8457 5.4998C13.1756 5.4998 13.4981 5.59763 13.7724 5.78092C14.0467 5.96422 14.2605 6.22474 14.3867 6.52955C14.513 6.83435 14.546 7.16974 14.4816 7.49331C14.4172 7.81687 14.2583 8.11408 14.025 8.34733C13.8702 8.50241 13.6864 8.62544 13.4841 8.70939C13.2817 8.79333 13.0648 8.83654 12.8457 8.83654C12.6266 8.83654 12.4097 8.79333 12.2073 8.70939C12.005 8.62544 11.8211 8.50241 11.6664 8.34733Z"
+                          stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+                        <path
+                          d="M4.28281 13.75C3.8934 13.7978 3.53113 13.9743 3.25352 14.2516C2.56523 14.9422 2.5 17.5 2.5 17.5C2.5 17.5 5.05937 17.4348 5.74805 16.7457C6.0264 16.4685 6.20323 16.1056 6.25 15.7156"
+                          stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+                      </svg>
+                    </span>
+                  </a>
+                </div>
+                <div class="slider__item-right">
+                  <div class="slider__item-img">
+                    <img src="images/dest/icons/banner-1.svg" alt="banner">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="form-wrapper">
+        <div class="container">
+          <form class="form">
+            <div class="form__inner">
+              <h4>
+                Форма регистрации
+              </h4>
+              <p>
+                Авторизация откроет все возможности платформы
+              </p>
+
+              <h6>
+                Я представитель:
+              </h6>
+              <div class="radio-group">
+                <input type="radio" id="radio-1" name="radio" value="radio-1">
+                <label class="radio-soc" for="radio-1">CPA-сети</label>
+                <input type="radio" id="radio-2" name="radio" value="radio-2" checked>
+                <label class="radio-ad" for="radio-2">Рекламодателя</label>
+              </div>
+
+              <div class="form__group">
+                <span>Выберете сеть или рекламодателя из списка:</span>
+                <div class="select">
+                  <select class="form-select" id="form-select" required name="form-select">
+                    <option></option>
+                    <option>Выберите из списка ниже 1</option>
+                    <option>Выберите из списка ниже 2</option>
+                    <option>Выберите из списка ниже 3</option>
+                    <option>Выберите из списка ниже 3</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form__group">
+                <label for="name">Ваше имя</label>
+                <input id="name" name="name" required type="text" placeholder="Имя Фамилия">
+              </div>
+              <div class="form__group">
+                <label for="telegram">Ваш телеграм</label>
+                <input id="telegram" name="telegram" required type="text" placeholder="@telegram_login">
+              </div>
+              <button class="btn btn--green">
+                Зарегистрироваться
+              </button>
+            </div>
+          </form>
+        </div>
+      </section>
+
+      <section class="question">
+        <div class="container">
+          <div class="question__inner">
+            <div class="question__left">
+              <h4>
+                Для чего этот ресурс
+              </h4>
+              <p>
+                На этом ресурсе собрана статистика офферов микрокредитных организаций и приведен список сетей, в которых
+                они размещаются подробной статистикой
+              </p>
+            </div>
+            <div class="question__right">
+              <ul>
+                <li>
+                  <h5 class="border-left">
+                    Быстрый поиск офферов
+                  </h5>
+                  <p>Описание пункта на одну или несколько строк. Описание пункта на одну или несколько строк. Описание
+                    пункта на одну или несколько строк.
+                  </p>
+                </li>
+                <li>
+                  <h5 class="border-left">
+                    Быстрый поиск офферов
+                  </h5>
+                  <p>Описание пункта на одну или несколько строк. Описание пункта на одну или несколько строк. Описание
+                    пункта на одну или несколько строк.
+                  </p>
+                </li>
+                <li>
+                  <h5 class="border-left">
+                    Быстрый поиск офферов
+                  </h5>
+                  <p>Описание пункта на одну или несколько строк. Описание пункта на одну или несколько строк. Описание
+                    пункта на одну или несколько строк.
+                  </p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="steps">
+        <div class="container">
+          <div class="steps__box border-left">
+            <h4>
+              Как работает этот
+              ресурс
+            </h4>
+            <p>
+              На этом ресурсе собрана статистика офферов микрокредитных организаций и приведен список сетей, в которых
+              они размещаются подробной статистикой
+            </p>
+          </div>
+          <ol class="list-decimal">
+            <li>
+              <p>
+                Найдите в списке интересующий вас
+                оффер
+              </p>
+            </li>
+            <li>
+              <p>
+                Сравните показатели оффера в партнерских сетях
+              </p>
+            </li>
+            <li>
+              <p>
+                Выберите сеть, исходя из показателей оффера в ней
+              </p>
+            </li>
+            <li>
+              <p>
+                Перейдите на страницу оффера в выбранной сети
+              </p>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="choice">
+        <div class="container">
+          <div class="choice__inner">
+            <div class="choice__box border-left">
+              <h4>
+                На что стоит обращать внимание при выборе оффера
+              </h4>
+              <p>
+                На этом ресурсе собрана статистика офферов микрокредитных организаций и приведен список сетей, в которых
+                они размещаются подробной статистикой
+              </p>
+            </div>
+            <div class="choice__right">
+              <ul class="list-choice">
+                <li>
+                  <div class="list-choice__img">
+                    <img src="images/dest/icons/choice-1.svg" alt="icon">
+                  </div>
+                  <div class="list-choice-box">
+                    <h6>
+                      СR
+                    </h6>
+                    <p>
+                      Описание СR на две строки
+                    </p>
+                  </div>
+                </li>
+                <li>
+                  <div class="list-choice__img">
+                    <img src="images/dest/icons/choice-2.svg" alt="icon">
+                  </div>
+                  <div class="list-choice-box">
+                    <h6>
+                      EPC
+                    </h6>
+                    <p>
+                      Описание СR на две строки
+                    </p>
+                  </div>
+                </li>
+                <li>
+                  <div class="list-choice__img">
+                    <img src="images/dest/icons/choice-3.svg" alt="icon">
+                  </div>
+                  <div class="list-choice-box">
+                    <h6>
+                      Ставка
+                    </h6>
+                    <p>
+                      Описание СR на две строки
+                    </p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </div>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__inner">
+          <div class="footer__left">
+            <a href="#" class="footer__logo">
+              <img src="images/dest/icons/logo.svg" alt="logo">
+            </a>
+            <p>
+              Короткое описание о ресурсе на несколько строк. Короткое описание о ресурсе на несколько строк. Короткое
+              описание о ресурсе на несколько строк. Короткое описание о ресурсе на несколько строк. Короткое описание о
+              ресурсе на несколько строк. Короткое описание о ресурсе на несколько строк.
+            </p>
+            <span>
+              © Offerates, 2023. Все права защищены
+            </span>
+          </div>
+          <div class="footer__right">
+            <h6>
+              Навигация
+            </h6>
+            <ul>
+              <li>
+                <a href="#">Главная</a>
+              </li>
+              <li>
+                <a href="#">Все офферы</a>
+              </li>
+              <li>
+                <a href="#">Все партнерские сети</a>
+              </li>
+              <li>
+                <a href="#">Избранное</a>
+              </li>
+              <li>
+                <a href="#">Рекламодателям</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <div class="modal-1" id="modal-1">
+    <div class="modal-inner">
+      <h6>
+        Войдите с помощью соцсетей
+      </h6>
+      <p>
+        Авторизация откроет все возможности платформы
+      </p>
+      <ul>
+        <li>
+          <a href="#" target="_blank">
+            <img src="images/dest/icons/google.svg" alt="icon">
+          </a>
+        </li>
+        <li>
+          <a href="#" target="_blank">
+            <img src="images/dest/icons/apple.svg" alt="icon">
+          </a>
+        </li>
+        <li>
+          <a href="#" target="_blank">
+            <img src="images/dest/icons/facebook.svg" alt="icon">
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+    integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"
+    integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/rateYo/2.3.2/jquery.rateyo.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+    integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <script src="js/app.min.js"></script>
+</body>
+
+</html>

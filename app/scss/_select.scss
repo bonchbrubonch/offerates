@@ -71,6 +71,9 @@
 .select2-container--default .select2-results__option--highlighted.select2-results__option--selectable,
 .select2-container--default .select2-results__option--selected {
   background-color: #242323 !important;
+  &:hover{
+    color: #56C676 !important;
+  }
 }
 
 .select2-search--dropdown {
