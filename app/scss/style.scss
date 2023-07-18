@@ -242,6 +242,9 @@
     font-weight: 700;
     line-height: 100%;
     width: 100%;
+    span{
+      display: none;
+    }
   }
 
   &__top-column:nth-child(1) {
@@ -276,10 +279,10 @@
       &::before {
         content: "";
         position: absolute;
-        left: -25px;
+        left: 0;
         right: 0;
         bottom: -1px;
-        width: 110%;
+        width: 100%;
         height: 160px;
         background: linear-gradient(180deg, rgba(22, 22, 22, 0.00) 0%, #161616 100%);
         z-index: 1;
@@ -379,7 +382,6 @@
     display: flex;
     flex-direction: column;
     width: 100%;
-    overflow: hidden;
   }
 
   &__inner {
@@ -547,6 +549,42 @@
       font-size: 16px;
       font-weight: 500;
       line-height: 24px;
+    }
+  }
+  &--networks{
+
+    .offers__top-column:nth-child(2),
+    .offers__top-column:nth-child(3),
+    .offers__top-column:nth-child(4),
+    .offers__top-column:nth-child(5),
+    .offers__top-column:nth-child(6) {
+      max-width: 228px;
+      padding: 0 10px;
+      
+    }
+    .offers__row-img{
+      max-width: 223px;
+      width: 100%;
+      border-radius: 8px;
+      background-color: #fff;
+      overflow: hidden;
+    }
+    .offers__row-percent{
+      max-width: 223px;
+      width: 100%;
+      span{
+        &:nth-child(1){
+          display: none ;
+        }
+      }
+    }
+    .networks__item-target{
+      max-width: 223px;
+      width: 100%;
+    }
+    .offers__row-link{
+      max-width: 223px;
+      width: 100%;
     }
   }
 }
