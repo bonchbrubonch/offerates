@@ -115,6 +115,7 @@ body.lock {
   }
 }
 
+
 /*start breadcrumbs=========*/
 .breadcrumbs {
   background-color: transparent;
@@ -212,5 +213,27 @@ body.lock {
 .page-article {
   .breadcrumbs {
     margin: 0 0 35px 0;
+  }
+}
+
+.page-favorites {
+  .breadcrumbs .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .breadcrumbs {
+    margin: 0 0 70px 0;
+  }
+
+  .offers {
+    padding: 0 0 20px 0;
+  }
+}
+
+.page-account {
+  .breadcrumbs {
+    margin: 0 0 78px 0;
   }
 }

@@ -34,6 +34,10 @@ $(function () {
     placeholder: "Поиск по офферу",
   });
 
+  $(".reviews-filter").select2({
+    minimumResultsForSearch: -1
+  });
+
 
   $('.offers__bottom-like').on('click', function () {
     $(this).toggleClass('active');

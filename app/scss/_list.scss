@@ -197,7 +197,11 @@
     font-weight: 500;
     line-height: 20px;
   }
-
+  &__bottom-wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
   &__bottom {
     display: flex;
     justify-content: space-between;
@@ -240,8 +244,9 @@
     }
   }
 
-  &__like {
-    margin: 0 24px 0 0;
+  &__like,
+  &__dislike {
+    margin: 0 0 0 24px;
   }
 
   &__like.active {
