@@ -1,0 +1,161 @@
+.banner {
+
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  &__inner {
+    padding: 35px 0;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 60%;
+      left: 263px;
+      right: 300px;
+      transform: translateY(-50%);
+      height: 138%;
+      background-image: url("../images/dest/icons/banner-line.svg");
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center;
+    }
+  }
+
+  p {
+    position: relative;
+    z-index: 1;
+    max-width: 255px;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 40px;
+  }
+
+  &__img {
+    position: relative;
+    z-index: 1;
+    height: 90px;
+    max-width: 225px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 15px;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #fff;
+    overflow: hidden;
+
+
+    img {
+      height: calc(100% - 3px);
+      width: auto;
+      object-fit: contain;
+    }
+  }
+
+  .btn {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 600;
+    border-radius: 36px;
+    padding: 18.5px 43.5px;
+
+    &:hover {
+      box-shadow: none;
+    }
+  }
+
+  &--green {
+    .banner__inner {
+      border-radius: 8px;
+      background: linear-gradient(135deg, #56C676 0%, rgba(86, 198, 118, 0.60) 100%);
+      overflow: hidden;
+    }
+
+    p {
+      max-width: 370px;
+    }
+
+    .btn {
+      margin: 0 0 0 auto;
+
+    }
+
+    .banner__img {
+      margin: 0 15px 0 8%;
+    }
+
+    .banner__inner {
+      padding: 35px 50px 35px 35px;
+      justify-content: flex-start;
+
+      &::before {
+        left: 297px;
+        right: 334px;
+        background-image: url("../images/dest/icons/banner-line-2.svg");
+      }
+    }
+  }
+
+  &--large-green {
+    background: linear-gradient(135deg, #56C676 0%, rgba(86, 198, 118, 0.60) 100%);
+
+    .banner__inner {
+      justify-content: space-between;
+      background: none;
+      padding: 35px 0 35px 0;
+      overflow: visible;
+
+      &::before {
+        top: 53%;
+        left: 273px;
+        right: 290px;
+      }
+    }
+
+    .banner__img {
+      margin: 0 15px 0 15px;
+    }
+
+    .btn {
+      margin: 0;
+    }
+  }
+
+  &--orange {
+   
+    .banner__inner {
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      &::before {
+        background-image: url("../images/dest/icons/banner-line-2.svg");
+      }
+    }
+  }
+
+  &--orange-intro {
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: "";
+      left: 0;
+      right: 0;
+      width: 100%;
+      top: 0;
+      height: 800px;
+      background-image: url("../images/dest/content/home-orange.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: bottom center;
+    }
+  }
+}

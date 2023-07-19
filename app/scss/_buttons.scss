@@ -30,6 +30,24 @@
       margin: 0 0 0 10px;
     }
   }
+
+  &--green-shadow {
+    box-shadow: 0px 0px 8px 0px #56C676, 0px 0px 8px 0px #56C676, 0px 0px 8px 0px #56C676;
+
+    &:hover {
+      box-shadow: none;
+    }
+  }
+
+  &--white-shadow {
+    border: 2px solid #FFF;
+    box-shadow: 0px 0px 8px 0px #FFF, 0px 0px 8px 0px #FFF, 0px 0px 8px 0px #FFF;
+
+    &:hover {
+      box-shadow: none;
+      background-color: transparent;
+    }
+  }
 }
 
 .btn-underborder {
@@ -82,9 +100,11 @@
 
   &--appeal {
     padding: 13px 0 13px;
-    span{
+
+    span {
       margin: 0 10px 0 0;
     }
+
     &::before {
       background-image: none;
     }

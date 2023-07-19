@@ -7,6 +7,7 @@
 @import "modals";
 @import "slider";
 @import "form";
+@import "banner";
 
 /*start header========*/
 .header {
@@ -165,7 +166,8 @@
 /*start intro=========*/
 .intro {
   padding: 24px 0 40px;
-
+  position: relative;
+  z-index: 1;
   &__inner {
     display: flex;
     justify-content: space-between;
@@ -197,6 +199,25 @@
     width: 100%;
   }
 
+  &--home {
+    .intro__inner {
+      border-radius: 8px;
+      background-color: #0F0E0E;
+
+      .intro__left {
+        padding: 0px 0 39px 0px !important;
+
+        h1 {
+          margin: 0 0 30px 0 !important;
+        }
+
+        &::before {
+          display: none;
+        }
+
+      }
+    }
+  }
 }
 
 /*end intro=========*/
@@ -204,7 +225,8 @@
 /*start offers=============*/
 .offers {
   padding: 0 0 50px 0;
-
+  position: relative;
+  z-index: 1;
   &__filters {
     margin: 0 0 20px 0;
     display: flex;
@@ -242,7 +264,8 @@
     font-weight: 700;
     line-height: 100%;
     width: 100%;
-    span{
+
+    span {
       display: none;
     }
   }
@@ -551,7 +574,8 @@
       line-height: 24px;
     }
   }
-  &--networks{
+
+  &--networks {
 
     .offers__top-column:nth-child(2),
     .offers__top-column:nth-child(3),
@@ -560,29 +584,34 @@
     .offers__top-column:nth-child(6) {
       max-width: 228px;
       padding: 0 10px;
-      
+
     }
-    .offers__row-img{
+
+    .offers__row-img {
       max-width: 223px;
       width: 100%;
       border-radius: 8px;
       background-color: #fff;
       overflow: hidden;
     }
-    .offers__row-percent{
+
+    .offers__row-percent {
       max-width: 223px;
       width: 100%;
-      span{
-        &:nth-child(1){
-          display: none ;
+
+      span {
+        &:nth-child(1) {
+          display: none;
         }
       }
     }
-    .networks__item-target{
+
+    .networks__item-target {
       max-width: 223px;
       width: 100%;
     }
-    .offers__row-link{
+
+    .offers__row-link {
       max-width: 223px;
       width: 100%;
     }
@@ -618,7 +647,6 @@
       height: 480px;
       border-radius: 50%;
       border: 20px solid rgba(86, 198, 118, 0.20);
-      z-index: -1;
     }
 
     h4 {
@@ -811,6 +839,7 @@
   &__filter {
     max-width: 290px;
     width: 100%;
+
     &>span {
       margin: 0 0 10px 0;
       display: block;
@@ -1429,6 +1458,30 @@
 /*end account-intro=======*/
 
 
+.reclame {
+  display: flex;
+  justify-content: center;
+
+  &__list {
+    padding: 25px 0 0 0;
+    max-width: 205px;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    height: fit-content;
+
+    .btn {
+      margin: 0 0 20px 0;
+      padding: 13.5px 25.5px;
+      width: 100%;
+      font-size: 16px;
+      font-weight: 600;
+      line-height: normal;
+    }
+  }
+
+
+}
 
 
 
