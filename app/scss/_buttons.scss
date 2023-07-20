@@ -109,4 +109,11 @@
       background-image: none;
     }
   }
+  &--show{
+    padding: 13px 60px 13px 34px;
+    &::before{
+      background-image: url("../images/dest/icons/arrow.svg");
+      right: 28px;
+    }
+  }
 }
