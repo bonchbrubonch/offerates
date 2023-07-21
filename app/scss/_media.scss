@@ -845,16 +845,23 @@
     max-width: 100%;
     margin: 0 0 24px 0;
   }
-
-  .page-account .breadcrumbs {
-    margin: 0 0 54px 0;
+  .account-intro__left-wrap{
+    max-width: 100%;
+    margin: 0 0 24px 0;
   }
-
+  .page-account .breadcrumbs {
+    margin: 0 0 30px 0;
+  }
+  .account-links{
+    margin: 0 0 53px -13px;
+  }
   .account-intro__img {
     max-width: 210px;
     margin: 0 auto;
   }
-
+  .account-addLogo{
+    max-width: 100%;
+  }
   .account-intro {
     padding: 0 0 60px 0;
   }

@@ -136,6 +136,12 @@
     }
   }
 
+  &__user-name {
+    max-width: 108px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
   &__logout {
     margin: 0 0 0 10px;
     display: flex;
@@ -877,6 +883,7 @@
     border: 1px solid #383838;
     background-color: #1F1F1F;
     color: #fff;
+    outline: none;
   }
 
   &__form-bottom {
@@ -897,6 +904,9 @@
 
   .btn {
     padding: 13.5px 30.5px;
+  }
+  &--account{
+    padding: 0 0 40px;
   }
 }
 
@@ -1400,9 +1410,32 @@
   background-position: center 38%;
 }
 
-/*start account-intro=======*/
+/*start account=======*/
+.account-links {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 0 85px 0;
+  li{
+    
+  }
+  a {
+    display: flex;
+    height: 43px;
+    padding: 10px 24px;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 100%;
+  }
+
+  li.account-link-active {
+    a {
+      border-bottom: 2px solid #56C676;
+    }
+  }
+}
+
 .account-intro {
-  padding: 0 0 10px 0;
+  padding: 0 0 40px 0;
 
   &__inner {
     display: flex;
@@ -1410,14 +1443,38 @@
   }
 
   &__left {
+    height: 160px;
     padding: 34px 40px;
-    max-width: 288px;
     width: 100%;
-    margin: 0 23px 0 0;
-    height: fit-content;
     border-radius: 8px;
     border: 1px solid #383838;
     background-color: #1F1F1F;
+  }
+
+  &__left-wrap {
+    &>span {
+      display: block;
+      margin: 0 0 8px 0;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 16px;
+    }
+
+    max-width: 288px;
+    width: 100%;
+    margin: 0 23px 0 0;
+  }
+
+  &__right-wrap {
+    &>span {
+      display: block;
+      margin: 0 0 8px 0;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 16px;
+    }
+
+    width: 100%;
   }
 
   &__img {
@@ -1430,6 +1487,10 @@
       width: 100%;
       object-fit: contain;
     }
+  }
+
+  &--img-none {
+    background-color: transparent;
   }
 
   &__right {
@@ -1452,13 +1513,61 @@
     .btn {
       padding: 11.5px 30.5px;
       height: 48px;
-      margin: 0 0 0 auto;
+      margin: 24px 0 0 auto;
+    }
+
+    textarea {
+      resize: none;
+      padding: 15px;
+      width: 100%;
+      height: 160px;
+      border: 1px solid #383838;
+      background-color: #1f1f1f;
+      color: #fff;
+      outline: none;
+
+      &::placeholder {
+        color: rgba(#fff, .5);
+      }
     }
   }
 }
 
-/*end account-intro=======*/
+.account-addLogo {
+  max-width: 290px;
+  margin: 24px 0 0 0;
+  height: 48px;
+  padding: 9.5px 30px;
+  border-radius: 24px;
+  border: 2px solid #3B4653;
+  cursor: pointer;
 
+  input[type="file"] {
+    display: none;
+  }
+
+  &__wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+
+  &__sup {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: normal;
+  }
+
+  &__icon {
+    width: 20px;
+    height: 20px;
+    margin: 0 0 0 10px;
+  }
+}
+
+
+/*end account=======*/
 
 .reclame {
   display: flex;
@@ -1532,6 +1641,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+
     ul {
       display: flex;
       flex-wrap: wrap;
@@ -1562,7 +1672,8 @@
       flex-shrink: 0;
     }
   }
-  .btn-underborder{
+
+  .btn-underborder {
     margin: 35px auto 20px;
   }
 }
