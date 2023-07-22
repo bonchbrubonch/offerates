@@ -127,14 +127,15 @@
           <div class="breadcrumbs__inner">
             <ul class="breadcrumbs__list">
               <li><a href="#">Главная</a></li>
-              <li><span>Аккаунт рекламодателя</span></li>
+              <li><a href="#">Аккаунт рекламодателя</a></li>
+              <li><span>Сети</span></li>
             </ul>
           </div>
         </div>
       </div>
       <div class="container">
         <ul class="account-links">
-          <li class="account-link-active">
+          <li>
             <a href="#">Компания</a>
           </li>
           <li>
@@ -143,46 +144,44 @@
           <li>
             <a href="#">Офферы</a>
           </li>
-          <li>
+          <li class="account-link-active">
             <a href="#">Сети</a>
           </li>
         </ul>
       </div>
-      <section class="account-intro">
+
+      <section class="connection">
         <div class="container">
-          <div class="account-intro__inner">
-            <div class="account-intro__left-wrap">
-              <span>Загрузите лого</span>
-              <div class="account-intro__left">
-                <div class="account-intro__img account-intro--img-none">
-                  <img src="images/dest/content/image.png" alt="logo">
+          <h4 class="border-left">
+            Cвязь между офером и сетью
+          </h4>
+          <div class="connection__top">
+            <div class="connection__input-large">
+              <span>Ccылка на сеть</span>
+              <div class="connection__input-inner">
+                <input type="text" placeholder="https://">
+              </div>
+            </div>
+            <div class="connection__top-box">
+              <div class="connection__select">
+                <span>Добавьте оффер из списка</span>
+                <div class="select">
+                  <select class="offers" id="offers" required name="offers">
+                    <option>CreditPlus</option>
+                    <option>CreditPlus2</option>
+                    <option>CreditPlus3</option>
+                    <option>CreditPlus4</option>
+                  </select>
                 </div>
               </div>
-              <div class="account-addLogo">
-                <label class="account-addLogo__wrap">
-                  <span class="account-addLogo__sup">Добавить лого</span>
-                  <input type="file" readonly>
-                  <span class="account-addLogo__icon">
-                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path
-                        d="M9.99996 18.3307C14.6023 18.3307 18.3333 14.5998 18.3333 9.9974C18.3333 5.39502 14.6023 1.66406 9.99996 1.66406C5.39759 1.66406 1.66663 5.39502 1.66663 9.9974C1.66663 14.5998 5.39759 18.3307 9.99996 18.3307Z"
-                        stroke="white" stroke-linecap="round" stroke-linejoin="round" />
-                      <path d="M10 6.66406V13.3307" stroke="white" stroke-linecap="round" stroke-linejoin="round" />
-                      <path d="M6.66663 10H13.3333" stroke="white" stroke-linecap="round" stroke-linejoin="round" />
-                    </svg>
-                  </span>
-                </label>
+              <div class="connection__input-large">
+                <span>Ccылка на оффер в сети</span>
+                <div class="connection__input-inner">
+                  <input type="text" placeholder="https://">
+                </div>
               </div>
             </div>
-            <div class="account-intro__right-wrap">
-              <span>Введите описание</span>
-              <div class="account-intro__right">
-                <textarea placeholder="Описание" required></textarea>
-                <button class="btn">
-                  Сохранить
-                </button>
-              </div>
-            </div>
+            <button class="btn">Сохранить</button>
           </div>
         </div>
       </section>

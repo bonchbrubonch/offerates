@@ -97,7 +97,7 @@
     font-size: 60px;
     font-weight: 800;
     line-height: 100%;
-    
+
   }
 }
 
@@ -262,6 +262,43 @@
     svg {
       fill: #FF3D00;
     }
+  }
+
+  &__status {
+    border-top: 2px solid #383838;
+    margin: 23px 0 0 0;
+    padding: 23px 0 0 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__status-viewing{
+    margin: 0 20px 0 0;
+    border-radius: 8px;
+    padding: 14.5px 32px;
+    color: #F0B020;
+    background-color: rgba(240, 176, 32, 0.20);
+  }
+  &__status-resolved{
+    margin: 0 20px 0 0;
+    border-radius: 8px;
+    padding: 14.5px 32px;
+    color: #56C676;
+    background-color: rgba(86, 198, 118, 0.20);
+  }
+  &__status-refusal{
+    margin: 0 20px 0 0;
+    border-radius: 8px;
+    padding: 14.5px 32px;
+    color: #F04520;
+    background-color: rgba(240, 69, 32, 0.20);
+  }
+  &__status-deleted{
+    margin: 0 20px 0 0;
+    border-radius: 8px;
+    padding: 14.5px 32px;
+    color: #8A929C;
+    background-color: rgba(138, 146, 156, 0.20);
   }
 }
 

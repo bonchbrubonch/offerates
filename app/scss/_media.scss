@@ -418,6 +418,26 @@
   .reclame {
     display: block;
   }
+
+  .reviews__top-wrapper {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .reviews__list-filter li {
+    margin: 0 15px 15px 0;
+  }
+
+  .reviews__top-wrapper {
+    margin: 5px 0 0 0;
+  }
+
+  .reviews__list-filter {
+    margin: 0 0 25px 0;
+  }
+
+
+
 }
 
 @media (max-width: 900px) {
@@ -845,23 +865,29 @@
     max-width: 100%;
     margin: 0 0 24px 0;
   }
-  .account-intro__left-wrap{
+
+  .account-intro__left-wrap {
     max-width: 100%;
     margin: 0 0 24px 0;
   }
+
   .page-account .breadcrumbs {
     margin: 0 0 30px 0;
   }
-  .account-links{
+
+  .account-links {
     margin: 0 0 53px -13px;
   }
+
   .account-intro__img {
     max-width: 210px;
     margin: 0 auto;
   }
-  .account-addLogo{
+
+  .account-addLogo {
     max-width: 100%;
   }
+
   .account-intro {
     padding: 0 0 60px 0;
   }
@@ -1098,6 +1124,18 @@
 
   .page-blog .breadcrumbs {
     margin: 0 0 9px 0;
+  }
+
+  .modal {
+    padding: 40px 24px 40px 24px;
+  }
+
+  .modal-3 {
+    padding: 40px 24px 40px 24px;
+  }
+
+  .links__item-box {
+    max-width: calc(100% - 84px);
   }
 }
 
@@ -1897,6 +1935,62 @@
   .blog .btn-underborder {
     margin: 10px auto 20px;
   }
+
+  .modal__button-add {
+    left: 0;
+    right: 0;
+    max-width: 100%;
+    bottom: 70px;
+  }
+
+  .modal__form .btn {
+    width: 100%;
+    padding: 11.5px 28.5px;
+    margin: 100px 0 0 auto;
+  }
+
+  .reviews-list__status-viewing,
+  .reviews-list__status-resolved,
+  .reviews-list__status-refusal,
+  .reviews-list__status-deleted {
+    padding: 14.5px 18px;
+  }
+
+  .reviews .btn-underborder--show {
+    margin: 35px auto 20px;
+  }
+
+  .connection__top-box {
+    flex-direction: column;
+  }
+
+  .connection__top-box {
+    margin: 15px 0 0 0;
+  }
+
+  .connection__select {
+    max-width: 100%;
+    margin: 0 0 15px 0;
+  }
+
+  .connection .btn {
+    width: 100%;
+    margin: 19px 0 0 0;
+  }
+
+  .links__item {
+    flex-direction: column;
+  }
+
+  .links__item-box {
+    flex-direction: column;
+    max-width: 100%;
+  }
+
+  .links__col-wrap {
+    margin: 0 0 16px 0;
+    width: 100%;
+  }
 }
 
 @media (max-width: 450px) {
@@ -2024,4 +2118,14 @@
     margin: 15px 0;
   }
 
+  .reviews-list__status {
+    flex-direction: column;
+  }
+
+  .reviews-list__status-viewing,
+  .reviews-list__status-resolved,
+  .reviews-list__status-refusal,
+  .reviews-list__status-deleted {
+    margin: 0;
+  }
 }

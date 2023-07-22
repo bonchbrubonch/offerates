@@ -10,6 +10,10 @@ $(function () {
     $("body").removeClass("lock");
   });
 
+  $(".modal__button-add").on("click", function () {
+    $(".add-info").addClass("open");
+  });
+
   $(".currency").select2({
     minimumResultsForSearch: -1
   });
@@ -35,6 +39,10 @@ $(function () {
   });
 
   $(".reviews-filter").select2({
+    minimumResultsForSearch: -1
+  });
+
+  $(".offers").select2({
     minimumResultsForSearch: -1
   });
 

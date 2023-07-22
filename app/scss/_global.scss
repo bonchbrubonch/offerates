@@ -149,14 +149,17 @@ body.lock {
           background-color: #fff;
         }
       }
-      &:last-child{
-        &::before{
+
+      &:last-child {
+        &::before {
           background-color: #56C676;
         }
-        span{
+
+        span {
           color: #56C676;
         }
       }
+
       a {
         &:hover {
           text-decoration: underline;
@@ -222,7 +225,7 @@ body.lock {
   }
 }
 
-.page-blog{
+.page-blog {
   .breadcrumbs {
     margin: 0 0 35px 0;
   }
@@ -253,6 +256,13 @@ body.lock {
 .page-account {
   .breadcrumbs {
     margin: 0 0 52px 0;
+  }
+
+  &--short-bg {
+    .content {
+      background-position: top left;
+      background-size: 480px 480px;
+    }
   }
 }
 

@@ -24,7 +24,7 @@
 
 <body class="page-account">
   <div class="wrapper">
-    <div class="content" style="background-image: url('images/dest/content/bg-all-offers.png');">
+    <div class="content" style="background-image: url('images/dest/content/bg-offers-detail.png');">
       <header class="header header--enter">
         <div class="container">
           <div class="header__inner">
@@ -118,7 +118,7 @@
 
       <div class="page-title">
         <div class="container">
-          <h2>Аккаунт рекламодателя</h2>
+          <h2>Мои апеляции</h2>
         </div>
       </div>
 
@@ -127,61 +127,43 @@
           <div class="breadcrumbs__inner">
             <ul class="breadcrumbs__list">
               <li><a href="#">Главная</a></li>
-              <li><a href="#">Аккаунт рекламодателя</a></li>
-              <li><span>Отзывы</span></li>
+              <li><a href="#">Отзывы</a></li>
+              <li><span>Мои апеляции</span></li>
             </ul>
           </div>
         </div>
       </div>
 
-      <div class="container">
-        <ul class="account-links">
-          <li>
-            <a href="#">Компания</a>
-          </li>
-          <li class="account-link-active">
-            <a href="#">Отзывы</a>
-          </li>
-          <li>
-            <a href="#">Офферы</a>
-          </li>
-          <li>
-            <a href="#">Сети</a>
-          </li>
-        </ul>
-      </div>
-
       <section class="reviews reviews--account">
         <div class="container">
-          <div class="reviews__top">
-            <h4 class="border-left">
-              Отзывы о компании
-            </h4>
-          </div>
-          <div class="reviews__filter-wrap">
-            <div class="reviews__filter">
-              <span>
-                Сортировать список отзывов
-              </span>
-
-              <div class="select">
-                <select class="reviews-filter" id="reviews-filter" required name="reviews-filter">
-                  <option>От новых к старым</option>
-                  <option>От старых к новым</option>
-                  <option>Рейтинг: от высокого к низкому</option>
-                  <option>Рейтинг: от низкого к высокому</option>
-                  <option>По самым популярным</option>
-                  <option>По менее популярным</option>
-                </select>
-              </div>
-
+          <div class="reviews__top-wrapper">
+            <div class="reviews__top">
+              <h4 class="border-left">
+                Список апеляций
+              </h4>
             </div>
-            <button class="btn-underborder btn-underborder--appeal">
-              <span>
-                <img src="images/dest/icons/list.svg" alt="icon">
-              </span>
-              Мои апеляции
-            </button>
+            <ul class="reviews__list-filter">
+              <li>
+                <button class="reviews__btn-viewing active">
+                 <span>На рассмотрении</span> 
+                </button>
+              </li>
+              <li>
+                <button class="reviews__btn-resolved active">
+                 <span>Решен</span> 
+                </button>
+              </li>
+              <li>
+                <button class="reviews__btn-refusal active">
+                <span>Отказ</span>  
+                </button>
+              </li>
+              <li>
+                <button class="reviews__btn-deleted active">
+                <span>Удален из рейтинга</span>  
+                </button>
+              </li>
+            </ul>
           </div>
           <ul class="reviews-list">
             <li>
@@ -203,32 +185,35 @@
                 in vitae vestibulum. Enim nulla vel fames sem arcu eget dolor id. Consectetur odio porta aliquet
                 bibendum ipsum arcu lorem. At tempor elementum praesent nec lacus.
               </p>
-              <div class="reviews-list__bottom-wrapper">
-                <div class="reviews-list__bottom">
-                  <div class="reviews-list__rate">
-                    <div class="rateYo"></div>
-                    <div class="counter">5.0</div>
-                  </div>
-                  <div class="reviews-list__likes">
-                    <button class="reviews-list__like active">
-                      <span>24</span>
-                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                          d="M7 11L11 2C11.7956 2 12.5587 2.31607 13.1213 2.87868C13.6839 3.44129 14 4.20435 14 5V9H19.66C19.9499 8.99672 20.2371 9.0565 20.5016 9.17522C20.7661 9.29393 21.0016 9.46873 21.1919 9.68751C21.3821 9.90629 21.5225 10.1638 21.6033 10.4423C21.6842 10.7207 21.7035 11.0134 21.66 11.3L20.28 20.3C20.2077 20.7769 19.9654 21.2116 19.5979 21.524C19.2304 21.8364 18.7623 22.0055 18.28 22H7M7 11V22M7 11H4C3.46957 11 2.96086 11.2107 2.58579 11.5858C2.21071 11.9609 2 12.4696 2 13V20C2 20.5304 2.21071 21.0391 2.58579 21.4142C2.96086 21.7893 3.46957 22 4 22H7"
-                          stroke="#56C676" stroke-linecap="round" stroke-linejoin="round" />
-                      </svg>
-                    </button>
-                    <button class="reviews-list__dislike active">
-                      <span>5</span>
-                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                          d="M17 13.0004L13 22.0004C12.2044 22.0004 11.4413 21.6843 10.8787 21.1217C10.3161 20.5591 10 19.796 10 19.0004V15.0004H4.34C4.05009 15.0036 3.76294 14.9439 3.49843 14.8251C3.23392 14.7064 2.99839 14.5316 2.80814 14.3128C2.6179 14.0941 2.47749 13.8365 2.39666 13.5581C2.31583 13.2797 2.29649 12.987 2.34 12.7004L3.72 3.70036C3.79232 3.22346 4.03457 2.78875 4.40209 2.47636C4.76962 2.16396 5.23767 1.99491 5.72 2.00036H17M17 13.0004V2.00036M17 13.0004H19.67C20.236 13.0104 20.7859 12.8122 21.2154 12.4435C21.6449 12.0749 21.9241 11.5613 22 11.0004V4.00036C21.9241 3.43942 21.6449 2.92586 21.2154 2.55718C20.7859 2.1885 20.236 1.99035 19.67 2.00036H17"
-                          stroke="#FF3D00" stroke-linecap="round" stroke-linejoin="round" />
-                      </svg>
-                    </button>
-                  </div>
+              <div class="reviews-list__bottom">
+                <div class="reviews-list__rate">
+                  <div class="rateYo"></div>
+                  <div class="counter">5.0</div>
                 </div>
-                <button class="btn" data-fancybox data-src="#modal-2">Подать апеляцию</button>
+                <div class="reviews-list__likes">
+                  <button class="reviews-list__like active">
+                    <span>24</span>
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M7 11L11 2C11.7956 2 12.5587 2.31607 13.1213 2.87868C13.6839 3.44129 14 4.20435 14 5V9H19.66C19.9499 8.99672 20.2371 9.0565 20.5016 9.17522C20.7661 9.29393 21.0016 9.46873 21.1919 9.68751C21.3821 9.90629 21.5225 10.1638 21.6033 10.4423C21.6842 10.7207 21.7035 11.0134 21.66 11.3L20.28 20.3C20.2077 20.7769 19.9654 21.2116 19.5979 21.524C19.2304 21.8364 18.7623 22.0055 18.28 22H7M7 11V22M7 11H4C3.46957 11 2.96086 11.2107 2.58579 11.5858C2.21071 11.9609 2 12.4696 2 13V20C2 20.5304 2.21071 21.0391 2.58579 21.4142C2.96086 21.7893 3.46957 22 4 22H7"
+                        stroke="#56C676" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                  </button>
+                  <button class="reviews-list__dislike active">
+                    <span>5</span>
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M17 13.0004L13 22.0004C12.2044 22.0004 11.4413 21.6843 10.8787 21.1217C10.3161 20.5591 10 19.796 10 19.0004V15.0004H4.34C4.05009 15.0036 3.76294 14.9439 3.49843 14.8251C3.23392 14.7064 2.99839 14.5316 2.80814 14.3128C2.6179 14.0941 2.47749 13.8365 2.39666 13.5581C2.31583 13.2797 2.29649 12.987 2.34 12.7004L3.72 3.70036C3.79232 3.22346 4.03457 2.78875 4.40209 2.47636C4.76962 2.16396 5.23767 1.99491 5.72 2.00036H17M17 13.0004V2.00036M17 13.0004H19.67C20.236 13.0104 20.7859 12.8122 21.2154 12.4435C21.6449 12.0749 21.9241 11.5613 22 11.0004V4.00036C21.9241 3.43942 21.6449 2.92586 21.2154 2.55718C20.7859 2.1885 20.236 1.99035 19.67 2.00036H17"
+                        stroke="#FF3D00" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+              <div class="reviews-list__status">
+                <div class="reviews-list__status-viewing">
+                  На рассмотрении
+                </div>
+                <a href="#" class="btn-underborder">Подробнее</a>
               </div>
             </li>
             <li>
@@ -250,32 +235,35 @@
                 in vitae vestibulum. Enim nulla vel fames sem arcu eget dolor id. Consectetur odio porta aliquet
                 bibendum ipsum arcu lorem. At tempor elementum praesent nec lacus.
               </p>
-              <div class="reviews-list__bottom-wrapper">
-                <div class="reviews-list__bottom">
-                  <div class="reviews-list__rate">
-                    <div class="rateYo"></div>
-                    <div class="counter">5.0</div>
-                  </div>
-                  <div class="reviews-list__likes">
-                    <button class="reviews-list__like active">
-                      <span>24</span>
-                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                          d="M7 11L11 2C11.7956 2 12.5587 2.31607 13.1213 2.87868C13.6839 3.44129 14 4.20435 14 5V9H19.66C19.9499 8.99672 20.2371 9.0565 20.5016 9.17522C20.7661 9.29393 21.0016 9.46873 21.1919 9.68751C21.3821 9.90629 21.5225 10.1638 21.6033 10.4423C21.6842 10.7207 21.7035 11.0134 21.66 11.3L20.28 20.3C20.2077 20.7769 19.9654 21.2116 19.5979 21.524C19.2304 21.8364 18.7623 22.0055 18.28 22H7M7 11V22M7 11H4C3.46957 11 2.96086 11.2107 2.58579 11.5858C2.21071 11.9609 2 12.4696 2 13V20C2 20.5304 2.21071 21.0391 2.58579 21.4142C2.96086 21.7893 3.46957 22 4 22H7"
-                          stroke="#56C676" stroke-linecap="round" stroke-linejoin="round" />
-                      </svg>
-                    </button>
-                    <button class="reviews-list__dislike active">
-                      <span>5</span>
-                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                          d="M17 13.0004L13 22.0004C12.2044 22.0004 11.4413 21.6843 10.8787 21.1217C10.3161 20.5591 10 19.796 10 19.0004V15.0004H4.34C4.05009 15.0036 3.76294 14.9439 3.49843 14.8251C3.23392 14.7064 2.99839 14.5316 2.80814 14.3128C2.6179 14.0941 2.47749 13.8365 2.39666 13.5581C2.31583 13.2797 2.29649 12.987 2.34 12.7004L3.72 3.70036C3.79232 3.22346 4.03457 2.78875 4.40209 2.47636C4.76962 2.16396 5.23767 1.99491 5.72 2.00036H17M17 13.0004V2.00036M17 13.0004H19.67C20.236 13.0104 20.7859 12.8122 21.2154 12.4435C21.6449 12.0749 21.9241 11.5613 22 11.0004V4.00036C21.9241 3.43942 21.6449 2.92586 21.2154 2.55718C20.7859 2.1885 20.236 1.99035 19.67 2.00036H17"
-                          stroke="#FF3D00" stroke-linecap="round" stroke-linejoin="round" />
-                      </svg>
-                    </button>
-                  </div>
+              <div class="reviews-list__bottom">
+                <div class="reviews-list__rate">
+                  <div class="rateYo"></div>
+                  <div class="counter">5.0</div>
                 </div>
-                <button class="btn" data-fancybox data-src="#modal-2">Подать апеляцию</button>
+                <div class="reviews-list__likes">
+                  <button class="reviews-list__like">
+                    <span>24</span>
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M7 11L11 2C11.7956 2 12.5587 2.31607 13.1213 2.87868C13.6839 3.44129 14 4.20435 14 5V9H19.66C19.9499 8.99672 20.2371 9.0565 20.5016 9.17522C20.7661 9.29393 21.0016 9.46873 21.1919 9.68751C21.3821 9.90629 21.5225 10.1638 21.6033 10.4423C21.6842 10.7207 21.7035 11.0134 21.66 11.3L20.28 20.3C20.2077 20.7769 19.9654 21.2116 19.5979 21.524C19.2304 21.8364 18.7623 22.0055 18.28 22H7M7 11V22M7 11H4C3.46957 11 2.96086 11.2107 2.58579 11.5858C2.21071 11.9609 2 12.4696 2 13V20C2 20.5304 2.21071 21.0391 2.58579 21.4142C2.96086 21.7893 3.46957 22 4 22H7"
+                        stroke="#56C676" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                  </button>
+                  <button class="reviews-list__dislike">
+                    <span>5</span>
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M17 13.0004L13 22.0004C12.2044 22.0004 11.4413 21.6843 10.8787 21.1217C10.3161 20.5591 10 19.796 10 19.0004V15.0004H4.34C4.05009 15.0036 3.76294 14.9439 3.49843 14.8251C3.23392 14.7064 2.99839 14.5316 2.80814 14.3128C2.6179 14.0941 2.47749 13.8365 2.39666 13.5581C2.31583 13.2797 2.29649 12.987 2.34 12.7004L3.72 3.70036C3.79232 3.22346 4.03457 2.78875 4.40209 2.47636C4.76962 2.16396 5.23767 1.99491 5.72 2.00036H17M17 13.0004V2.00036M17 13.0004H19.67C20.236 13.0104 20.7859 12.8122 21.2154 12.4435C21.6449 12.0749 21.9241 11.5613 22 11.0004V4.00036C21.9241 3.43942 21.6449 2.92586 21.2154 2.55718C20.7859 2.1885 20.236 1.99035 19.67 2.00036H17"
+                        stroke="#FF3D00" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+              <div class="reviews-list__status">
+                <div class="reviews-list__status-viewing">
+                  На рассмотрении
+                </div>
+                <a href="#" class="btn-underborder">Подробнее</a>
               </div>
             </li>
             <li>
@@ -297,32 +285,35 @@
                 in vitae vestibulum. Enim nulla vel fames sem arcu eget dolor id. Consectetur odio porta aliquet
                 bibendum ipsum arcu lorem. At tempor elementum praesent nec lacus.
               </p>
-              <div class="reviews-list__bottom-wrapper">
-                <div class="reviews-list__bottom">
-                  <div class="reviews-list__rate">
-                    <div class="rateYo"></div>
-                    <div class="counter">5.0</div>
-                  </div>
-                  <div class="reviews-list__likes">
-                    <button class="reviews-list__like active">
-                      <span>24</span>
-                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                          d="M7 11L11 2C11.7956 2 12.5587 2.31607 13.1213 2.87868C13.6839 3.44129 14 4.20435 14 5V9H19.66C19.9499 8.99672 20.2371 9.0565 20.5016 9.17522C20.7661 9.29393 21.0016 9.46873 21.1919 9.68751C21.3821 9.90629 21.5225 10.1638 21.6033 10.4423C21.6842 10.7207 21.7035 11.0134 21.66 11.3L20.28 20.3C20.2077 20.7769 19.9654 21.2116 19.5979 21.524C19.2304 21.8364 18.7623 22.0055 18.28 22H7M7 11V22M7 11H4C3.46957 11 2.96086 11.2107 2.58579 11.5858C2.21071 11.9609 2 12.4696 2 13V20C2 20.5304 2.21071 21.0391 2.58579 21.4142C2.96086 21.7893 3.46957 22 4 22H7"
-                          stroke="#56C676" stroke-linecap="round" stroke-linejoin="round" />
-                      </svg>
-                    </button>
-                    <button class="reviews-list__dislike active">
-                      <span>5</span>
-                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                          d="M17 13.0004L13 22.0004C12.2044 22.0004 11.4413 21.6843 10.8787 21.1217C10.3161 20.5591 10 19.796 10 19.0004V15.0004H4.34C4.05009 15.0036 3.76294 14.9439 3.49843 14.8251C3.23392 14.7064 2.99839 14.5316 2.80814 14.3128C2.6179 14.0941 2.47749 13.8365 2.39666 13.5581C2.31583 13.2797 2.29649 12.987 2.34 12.7004L3.72 3.70036C3.79232 3.22346 4.03457 2.78875 4.40209 2.47636C4.76962 2.16396 5.23767 1.99491 5.72 2.00036H17M17 13.0004V2.00036M17 13.0004H19.67C20.236 13.0104 20.7859 12.8122 21.2154 12.4435C21.6449 12.0749 21.9241 11.5613 22 11.0004V4.00036C21.9241 3.43942 21.6449 2.92586 21.2154 2.55718C20.7859 2.1885 20.236 1.99035 19.67 2.00036H17"
-                          stroke="#FF3D00" stroke-linecap="round" stroke-linejoin="round" />
-                      </svg>
-                    </button>
-                  </div>
+              <div class="reviews-list__bottom">
+                <div class="reviews-list__rate">
+                  <div class="rateYo"></div>
+                  <div class="counter">5.0</div>
                 </div>
-                <button class="btn" data-fancybox data-src="#modal-2">Подать апеляцию</button>
+                <div class="reviews-list__likes">
+                  <button class="reviews-list__like">
+                    <span>24</span>
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M7 11L11 2C11.7956 2 12.5587 2.31607 13.1213 2.87868C13.6839 3.44129 14 4.20435 14 5V9H19.66C19.9499 8.99672 20.2371 9.0565 20.5016 9.17522C20.7661 9.29393 21.0016 9.46873 21.1919 9.68751C21.3821 9.90629 21.5225 10.1638 21.6033 10.4423C21.6842 10.7207 21.7035 11.0134 21.66 11.3L20.28 20.3C20.2077 20.7769 19.9654 21.2116 19.5979 21.524C19.2304 21.8364 18.7623 22.0055 18.28 22H7M7 11V22M7 11H4C3.46957 11 2.96086 11.2107 2.58579 11.5858C2.21071 11.9609 2 12.4696 2 13V20C2 20.5304 2.21071 21.0391 2.58579 21.4142C2.96086 21.7893 3.46957 22 4 22H7"
+                        stroke="#56C676" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                  </button>
+                  <button class="reviews-list__dislike">
+                    <span>5</span>
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M17 13.0004L13 22.0004C12.2044 22.0004 11.4413 21.6843 10.8787 21.1217C10.3161 20.5591 10 19.796 10 19.0004V15.0004H4.34C4.05009 15.0036 3.76294 14.9439 3.49843 14.8251C3.23392 14.7064 2.99839 14.5316 2.80814 14.3128C2.6179 14.0941 2.47749 13.8365 2.39666 13.5581C2.31583 13.2797 2.29649 12.987 2.34 12.7004L3.72 3.70036C3.79232 3.22346 4.03457 2.78875 4.40209 2.47636C4.76962 2.16396 5.23767 1.99491 5.72 2.00036H17M17 13.0004V2.00036M17 13.0004H19.67C20.236 13.0104 20.7859 12.8122 21.2154 12.4435C21.6449 12.0749 21.9241 11.5613 22 11.0004V4.00036C21.9241 3.43942 21.6449 2.92586 21.2154 2.55718C20.7859 2.1885 20.236 1.99035 19.67 2.00036H17"
+                        stroke="#FF3D00" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+              <div class="reviews-list__status">
+                <div class="reviews-list__status-viewing">
+                  На рассмотрении
+                </div>
+                <a href="#" class="btn-underborder">Подробнее</a>
               </div>
             </li>
             <li>
@@ -344,32 +335,35 @@
                 in vitae vestibulum. Enim nulla vel fames sem arcu eget dolor id. Consectetur odio porta aliquet
                 bibendum ipsum arcu lorem. At tempor elementum praesent nec lacus.
               </p>
-              <div class="reviews-list__bottom-wrapper">
-                <div class="reviews-list__bottom">
-                  <div class="reviews-list__rate">
-                    <div class="rateYo"></div>
-                    <div class="counter">5.0</div>
-                  </div>
-                  <div class="reviews-list__likes">
-                    <button class="reviews-list__like active">
-                      <span>24</span>
-                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                          d="M7 11L11 2C11.7956 2 12.5587 2.31607 13.1213 2.87868C13.6839 3.44129 14 4.20435 14 5V9H19.66C19.9499 8.99672 20.2371 9.0565 20.5016 9.17522C20.7661 9.29393 21.0016 9.46873 21.1919 9.68751C21.3821 9.90629 21.5225 10.1638 21.6033 10.4423C21.6842 10.7207 21.7035 11.0134 21.66 11.3L20.28 20.3C20.2077 20.7769 19.9654 21.2116 19.5979 21.524C19.2304 21.8364 18.7623 22.0055 18.28 22H7M7 11V22M7 11H4C3.46957 11 2.96086 11.2107 2.58579 11.5858C2.21071 11.9609 2 12.4696 2 13V20C2 20.5304 2.21071 21.0391 2.58579 21.4142C2.96086 21.7893 3.46957 22 4 22H7"
-                          stroke="#56C676" stroke-linecap="round" stroke-linejoin="round" />
-                      </svg>
-                    </button>
-                    <button class="reviews-list__dislike active">
-                      <span>5</span>
-                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                          d="M17 13.0004L13 22.0004C12.2044 22.0004 11.4413 21.6843 10.8787 21.1217C10.3161 20.5591 10 19.796 10 19.0004V15.0004H4.34C4.05009 15.0036 3.76294 14.9439 3.49843 14.8251C3.23392 14.7064 2.99839 14.5316 2.80814 14.3128C2.6179 14.0941 2.47749 13.8365 2.39666 13.5581C2.31583 13.2797 2.29649 12.987 2.34 12.7004L3.72 3.70036C3.79232 3.22346 4.03457 2.78875 4.40209 2.47636C4.76962 2.16396 5.23767 1.99491 5.72 2.00036H17M17 13.0004V2.00036M17 13.0004H19.67C20.236 13.0104 20.7859 12.8122 21.2154 12.4435C21.6449 12.0749 21.9241 11.5613 22 11.0004V4.00036C21.9241 3.43942 21.6449 2.92586 21.2154 2.55718C20.7859 2.1885 20.236 1.99035 19.67 2.00036H17"
-                          stroke="#FF3D00" stroke-linecap="round" stroke-linejoin="round" />
-                      </svg>
-                    </button>
-                  </div>
+              <div class="reviews-list__bottom">
+                <div class="reviews-list__rate">
+                  <div class="rateYo"></div>
+                  <div class="counter">5.0</div>
                 </div>
-                <button class="btn" data-fancybox data-src="#modal-2">Подать апеляцию</button>
+                <div class="reviews-list__likes">
+                  <button class="reviews-list__like">
+                    <span>24</span>
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M7 11L11 2C11.7956 2 12.5587 2.31607 13.1213 2.87868C13.6839 3.44129 14 4.20435 14 5V9H19.66C19.9499 8.99672 20.2371 9.0565 20.5016 9.17522C20.7661 9.29393 21.0016 9.46873 21.1919 9.68751C21.3821 9.90629 21.5225 10.1638 21.6033 10.4423C21.6842 10.7207 21.7035 11.0134 21.66 11.3L20.28 20.3C20.2077 20.7769 19.9654 21.2116 19.5979 21.524C19.2304 21.8364 18.7623 22.0055 18.28 22H7M7 11V22M7 11H4C3.46957 11 2.96086 11.2107 2.58579 11.5858C2.21071 11.9609 2 12.4696 2 13V20C2 20.5304 2.21071 21.0391 2.58579 21.4142C2.96086 21.7893 3.46957 22 4 22H7"
+                        stroke="#56C676" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                  </button>
+                  <button class="reviews-list__dislike">
+                    <span>5</span>
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M17 13.0004L13 22.0004C12.2044 22.0004 11.4413 21.6843 10.8787 21.1217C10.3161 20.5591 10 19.796 10 19.0004V15.0004H4.34C4.05009 15.0036 3.76294 14.9439 3.49843 14.8251C3.23392 14.7064 2.99839 14.5316 2.80814 14.3128C2.6179 14.0941 2.47749 13.8365 2.39666 13.5581C2.31583 13.2797 2.29649 12.987 2.34 12.7004L3.72 3.70036C3.79232 3.22346 4.03457 2.78875 4.40209 2.47636C4.76962 2.16396 5.23767 1.99491 5.72 2.00036H17M17 13.0004V2.00036M17 13.0004H19.67C20.236 13.0104 20.7859 12.8122 21.2154 12.4435C21.6449 12.0749 21.9241 11.5613 22 11.0004V4.00036C21.9241 3.43942 21.6449 2.92586 21.2154 2.55718C20.7859 2.1885 20.236 1.99035 19.67 2.00036H17"
+                        stroke="#FF3D00" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+              <div class="reviews-list__status">
+                <div class="reviews-list__status-viewing">
+                  На рассмотрении
+                </div>
+                <a href="#" class="btn-underborder">Подробнее</a>
               </div>
             </li>
             <li>
@@ -391,32 +385,35 @@
                 in vitae vestibulum. Enim nulla vel fames sem arcu eget dolor id. Consectetur odio porta aliquet
                 bibendum ipsum arcu lorem. At tempor elementum praesent nec lacus.
               </p>
-              <div class="reviews-list__bottom-wrapper">
-                <div class="reviews-list__bottom">
-                  <div class="reviews-list__rate">
-                    <div class="rateYo"></div>
-                    <div class="counter">5.0</div>
-                  </div>
-                  <div class="reviews-list__likes">
-                    <button class="reviews-list__like active">
-                      <span>24</span>
-                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                          d="M7 11L11 2C11.7956 2 12.5587 2.31607 13.1213 2.87868C13.6839 3.44129 14 4.20435 14 5V9H19.66C19.9499 8.99672 20.2371 9.0565 20.5016 9.17522C20.7661 9.29393 21.0016 9.46873 21.1919 9.68751C21.3821 9.90629 21.5225 10.1638 21.6033 10.4423C21.6842 10.7207 21.7035 11.0134 21.66 11.3L20.28 20.3C20.2077 20.7769 19.9654 21.2116 19.5979 21.524C19.2304 21.8364 18.7623 22.0055 18.28 22H7M7 11V22M7 11H4C3.46957 11 2.96086 11.2107 2.58579 11.5858C2.21071 11.9609 2 12.4696 2 13V20C2 20.5304 2.21071 21.0391 2.58579 21.4142C2.96086 21.7893 3.46957 22 4 22H7"
-                          stroke="#56C676" stroke-linecap="round" stroke-linejoin="round" />
-                      </svg>
-                    </button>
-                    <button class="reviews-list__dislike active">
-                      <span>5</span>
-                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                          d="M17 13.0004L13 22.0004C12.2044 22.0004 11.4413 21.6843 10.8787 21.1217C10.3161 20.5591 10 19.796 10 19.0004V15.0004H4.34C4.05009 15.0036 3.76294 14.9439 3.49843 14.8251C3.23392 14.7064 2.99839 14.5316 2.80814 14.3128C2.6179 14.0941 2.47749 13.8365 2.39666 13.5581C2.31583 13.2797 2.29649 12.987 2.34 12.7004L3.72 3.70036C3.79232 3.22346 4.03457 2.78875 4.40209 2.47636C4.76962 2.16396 5.23767 1.99491 5.72 2.00036H17M17 13.0004V2.00036M17 13.0004H19.67C20.236 13.0104 20.7859 12.8122 21.2154 12.4435C21.6449 12.0749 21.9241 11.5613 22 11.0004V4.00036C21.9241 3.43942 21.6449 2.92586 21.2154 2.55718C20.7859 2.1885 20.236 1.99035 19.67 2.00036H17"
-                          stroke="#FF3D00" stroke-linecap="round" stroke-linejoin="round" />
-                      </svg>
-                    </button>
-                  </div>
+              <div class="reviews-list__bottom">
+                <div class="reviews-list__rate">
+                  <div class="rateYo"></div>
+                  <div class="counter">5.0</div>
                 </div>
-                <button class="btn" data-fancybox data-src="#modal-2">Подать апеляцию</button>
+                <div class="reviews-list__likes">
+                  <button class="reviews-list__like">
+                    <span>24</span>
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M7 11L11 2C11.7956 2 12.5587 2.31607 13.1213 2.87868C13.6839 3.44129 14 4.20435 14 5V9H19.66C19.9499 8.99672 20.2371 9.0565 20.5016 9.17522C20.7661 9.29393 21.0016 9.46873 21.1919 9.68751C21.3821 9.90629 21.5225 10.1638 21.6033 10.4423C21.6842 10.7207 21.7035 11.0134 21.66 11.3L20.28 20.3C20.2077 20.7769 19.9654 21.2116 19.5979 21.524C19.2304 21.8364 18.7623 22.0055 18.28 22H7M7 11V22M7 11H4C3.46957 11 2.96086 11.2107 2.58579 11.5858C2.21071 11.9609 2 12.4696 2 13V20C2 20.5304 2.21071 21.0391 2.58579 21.4142C2.96086 21.7893 3.46957 22 4 22H7"
+                        stroke="#56C676" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                  </button>
+                  <button class="reviews-list__dislike">
+                    <span>5</span>
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M17 13.0004L13 22.0004C12.2044 22.0004 11.4413 21.6843 10.8787 21.1217C10.3161 20.5591 10 19.796 10 19.0004V15.0004H4.34C4.05009 15.0036 3.76294 14.9439 3.49843 14.8251C3.23392 14.7064 2.99839 14.5316 2.80814 14.3128C2.6179 14.0941 2.47749 13.8365 2.39666 13.5581C2.31583 13.2797 2.29649 12.987 2.34 12.7004L3.72 3.70036C3.79232 3.22346 4.03457 2.78875 4.40209 2.47636C4.76962 2.16396 5.23767 1.99491 5.72 2.00036H17M17 13.0004V2.00036M17 13.0004H19.67C20.236 13.0104 20.7859 12.8122 21.2154 12.4435C21.6449 12.0749 21.9241 11.5613 22 11.0004V4.00036C21.9241 3.43942 21.6449 2.92586 21.2154 2.55718C20.7859 2.1885 20.236 1.99035 19.67 2.00036H17"
+                        stroke="#FF3D00" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+              <div class="reviews-list__status">
+                <div class="reviews-list__status-viewing">
+                  На рассмотрении
+                </div>
+                <a href="#" class="btn-underborder">Подробнее</a>
               </div>
             </li>
             <li>
@@ -438,32 +435,35 @@
                 in vitae vestibulum. Enim nulla vel fames sem arcu eget dolor id. Consectetur odio porta aliquet
                 bibendum ipsum arcu lorem. At tempor elementum praesent nec lacus.
               </p>
-              <div class="reviews-list__bottom-wrapper">
-                <div class="reviews-list__bottom">
-                  <div class="reviews-list__rate">
-                    <div class="rateYo"></div>
-                    <div class="counter">5.0</div>
-                  </div>
-                  <div class="reviews-list__likes">
-                    <button class="reviews-list__like active">
-                      <span>24</span>
-                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                          d="M7 11L11 2C11.7956 2 12.5587 2.31607 13.1213 2.87868C13.6839 3.44129 14 4.20435 14 5V9H19.66C19.9499 8.99672 20.2371 9.0565 20.5016 9.17522C20.7661 9.29393 21.0016 9.46873 21.1919 9.68751C21.3821 9.90629 21.5225 10.1638 21.6033 10.4423C21.6842 10.7207 21.7035 11.0134 21.66 11.3L20.28 20.3C20.2077 20.7769 19.9654 21.2116 19.5979 21.524C19.2304 21.8364 18.7623 22.0055 18.28 22H7M7 11V22M7 11H4C3.46957 11 2.96086 11.2107 2.58579 11.5858C2.21071 11.9609 2 12.4696 2 13V20C2 20.5304 2.21071 21.0391 2.58579 21.4142C2.96086 21.7893 3.46957 22 4 22H7"
-                          stroke="#56C676" stroke-linecap="round" stroke-linejoin="round" />
-                      </svg>
-                    </button>
-                    <button class="reviews-list__dislike active">
-                      <span>5</span>
-                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                          d="M17 13.0004L13 22.0004C12.2044 22.0004 11.4413 21.6843 10.8787 21.1217C10.3161 20.5591 10 19.796 10 19.0004V15.0004H4.34C4.05009 15.0036 3.76294 14.9439 3.49843 14.8251C3.23392 14.7064 2.99839 14.5316 2.80814 14.3128C2.6179 14.0941 2.47749 13.8365 2.39666 13.5581C2.31583 13.2797 2.29649 12.987 2.34 12.7004L3.72 3.70036C3.79232 3.22346 4.03457 2.78875 4.40209 2.47636C4.76962 2.16396 5.23767 1.99491 5.72 2.00036H17M17 13.0004V2.00036M17 13.0004H19.67C20.236 13.0104 20.7859 12.8122 21.2154 12.4435C21.6449 12.0749 21.9241 11.5613 22 11.0004V4.00036C21.9241 3.43942 21.6449 2.92586 21.2154 2.55718C20.7859 2.1885 20.236 1.99035 19.67 2.00036H17"
-                          stroke="#FF3D00" stroke-linecap="round" stroke-linejoin="round" />
-                      </svg>
-                    </button>
-                  </div>
+              <div class="reviews-list__bottom">
+                <div class="reviews-list__rate">
+                  <div class="rateYo"></div>
+                  <div class="counter">5.0</div>
                 </div>
-                <button class="btn" data-fancybox data-src="#modal-2">Подать апеляцию</button>
+                <div class="reviews-list__likes">
+                  <button class="reviews-list__like">
+                    <span>24</span>
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M7 11L11 2C11.7956 2 12.5587 2.31607 13.1213 2.87868C13.6839 3.44129 14 4.20435 14 5V9H19.66C19.9499 8.99672 20.2371 9.0565 20.5016 9.17522C20.7661 9.29393 21.0016 9.46873 21.1919 9.68751C21.3821 9.90629 21.5225 10.1638 21.6033 10.4423C21.6842 10.7207 21.7035 11.0134 21.66 11.3L20.28 20.3C20.2077 20.7769 19.9654 21.2116 19.5979 21.524C19.2304 21.8364 18.7623 22.0055 18.28 22H7M7 11V22M7 11H4C3.46957 11 2.96086 11.2107 2.58579 11.5858C2.21071 11.9609 2 12.4696 2 13V20C2 20.5304 2.21071 21.0391 2.58579 21.4142C2.96086 21.7893 3.46957 22 4 22H7"
+                        stroke="#56C676" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                  </button>
+                  <button class="reviews-list__dislike">
+                    <span>5</span>
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M17 13.0004L13 22.0004C12.2044 22.0004 11.4413 21.6843 10.8787 21.1217C10.3161 20.5591 10 19.796 10 19.0004V15.0004H4.34C4.05009 15.0036 3.76294 14.9439 3.49843 14.8251C3.23392 14.7064 2.99839 14.5316 2.80814 14.3128C2.6179 14.0941 2.47749 13.8365 2.39666 13.5581C2.31583 13.2797 2.29649 12.987 2.34 12.7004L3.72 3.70036C3.79232 3.22346 4.03457 2.78875 4.40209 2.47636C4.76962 2.16396 5.23767 1.99491 5.72 2.00036H17M17 13.0004V2.00036M17 13.0004H19.67C20.236 13.0104 20.7859 12.8122 21.2154 12.4435C21.6449 12.0749 21.9241 11.5613 22 11.0004V4.00036C21.9241 3.43942 21.6449 2.92586 21.2154 2.55718C20.7859 2.1885 20.236 1.99035 19.67 2.00036H17"
+                        stroke="#FF3D00" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+              <div class="reviews-list__status">
+                <div class="reviews-list__status-viewing">
+                  На рассмотрении
+                </div>
+                <a href="#" class="btn-underborder">Подробнее</a>
               </div>
             </li>
             <li>
@@ -485,32 +485,35 @@
                 in vitae vestibulum. Enim nulla vel fames sem arcu eget dolor id. Consectetur odio porta aliquet
                 bibendum ipsum arcu lorem. At tempor elementum praesent nec lacus.
               </p>
-              <div class="reviews-list__bottom-wrapper">
-                <div class="reviews-list__bottom">
-                  <div class="reviews-list__rate">
-                    <div class="rateYo"></div>
-                    <div class="counter">5.0</div>
-                  </div>
-                  <div class="reviews-list__likes">
-                    <button class="reviews-list__like active">
-                      <span>24</span>
-                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                          d="M7 11L11 2C11.7956 2 12.5587 2.31607 13.1213 2.87868C13.6839 3.44129 14 4.20435 14 5V9H19.66C19.9499 8.99672 20.2371 9.0565 20.5016 9.17522C20.7661 9.29393 21.0016 9.46873 21.1919 9.68751C21.3821 9.90629 21.5225 10.1638 21.6033 10.4423C21.6842 10.7207 21.7035 11.0134 21.66 11.3L20.28 20.3C20.2077 20.7769 19.9654 21.2116 19.5979 21.524C19.2304 21.8364 18.7623 22.0055 18.28 22H7M7 11V22M7 11H4C3.46957 11 2.96086 11.2107 2.58579 11.5858C2.21071 11.9609 2 12.4696 2 13V20C2 20.5304 2.21071 21.0391 2.58579 21.4142C2.96086 21.7893 3.46957 22 4 22H7"
-                          stroke="#56C676" stroke-linecap="round" stroke-linejoin="round" />
-                      </svg>
-                    </button>
-                    <button class="reviews-list__dislike active">
-                      <span>5</span>
-                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                          d="M17 13.0004L13 22.0004C12.2044 22.0004 11.4413 21.6843 10.8787 21.1217C10.3161 20.5591 10 19.796 10 19.0004V15.0004H4.34C4.05009 15.0036 3.76294 14.9439 3.49843 14.8251C3.23392 14.7064 2.99839 14.5316 2.80814 14.3128C2.6179 14.0941 2.47749 13.8365 2.39666 13.5581C2.31583 13.2797 2.29649 12.987 2.34 12.7004L3.72 3.70036C3.79232 3.22346 4.03457 2.78875 4.40209 2.47636C4.76962 2.16396 5.23767 1.99491 5.72 2.00036H17M17 13.0004V2.00036M17 13.0004H19.67C20.236 13.0104 20.7859 12.8122 21.2154 12.4435C21.6449 12.0749 21.9241 11.5613 22 11.0004V4.00036C21.9241 3.43942 21.6449 2.92586 21.2154 2.55718C20.7859 2.1885 20.236 1.99035 19.67 2.00036H17"
-                          stroke="#FF3D00" stroke-linecap="round" stroke-linejoin="round" />
-                      </svg>
-                    </button>
-                  </div>
+              <div class="reviews-list__bottom">
+                <div class="reviews-list__rate">
+                  <div class="rateYo"></div>
+                  <div class="counter">5.0</div>
                 </div>
-                <button class="btn" data-fancybox data-src="#modal-2">Подать апеляцию</button>
+                <div class="reviews-list__likes">
+                  <button class="reviews-list__like">
+                    <span>24</span>
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M7 11L11 2C11.7956 2 12.5587 2.31607 13.1213 2.87868C13.6839 3.44129 14 4.20435 14 5V9H19.66C19.9499 8.99672 20.2371 9.0565 20.5016 9.17522C20.7661 9.29393 21.0016 9.46873 21.1919 9.68751C21.3821 9.90629 21.5225 10.1638 21.6033 10.4423C21.6842 10.7207 21.7035 11.0134 21.66 11.3L20.28 20.3C20.2077 20.7769 19.9654 21.2116 19.5979 21.524C19.2304 21.8364 18.7623 22.0055 18.28 22H7M7 11V22M7 11H4C3.46957 11 2.96086 11.2107 2.58579 11.5858C2.21071 11.9609 2 12.4696 2 13V20C2 20.5304 2.21071 21.0391 2.58579 21.4142C2.96086 21.7893 3.46957 22 4 22H7"
+                        stroke="#56C676" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                  </button>
+                  <button class="reviews-list__dislike">
+                    <span>5</span>
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M17 13.0004L13 22.0004C12.2044 22.0004 11.4413 21.6843 10.8787 21.1217C10.3161 20.5591 10 19.796 10 19.0004V15.0004H4.34C4.05009 15.0036 3.76294 14.9439 3.49843 14.8251C3.23392 14.7064 2.99839 14.5316 2.80814 14.3128C2.6179 14.0941 2.47749 13.8365 2.39666 13.5581C2.31583 13.2797 2.29649 12.987 2.34 12.7004L3.72 3.70036C3.79232 3.22346 4.03457 2.78875 4.40209 2.47636C4.76962 2.16396 5.23767 1.99491 5.72 2.00036H17M17 13.0004V2.00036M17 13.0004H19.67C20.236 13.0104 20.7859 12.8122 21.2154 12.4435C21.6449 12.0749 21.9241 11.5613 22 11.0004V4.00036C21.9241 3.43942 21.6449 2.92586 21.2154 2.55718C20.7859 2.1885 20.236 1.99035 19.67 2.00036H17"
+                        stroke="#FF3D00" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+              <div class="reviews-list__status">
+                <div class="reviews-list__status-viewing">
+                  На рассмотрении
+                </div>
+                <a href="#" class="btn-underborder">Подробнее</a>
               </div>
             </li>
             <li>
@@ -532,35 +535,41 @@
                 in vitae vestibulum. Enim nulla vel fames sem arcu eget dolor id. Consectetur odio porta aliquet
                 bibendum ipsum arcu lorem. At tempor elementum praesent nec lacus.
               </p>
-              <div class="reviews-list__bottom-wrapper">
-                <div class="reviews-list__bottom">
-                  <div class="reviews-list__rate">
-                    <div class="rateYo"></div>
-                    <div class="counter">5.0</div>
-                  </div>
-                  <div class="reviews-list__likes">
-                    <button class="reviews-list__like active">
-                      <span>24</span>
-                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                          d="M7 11L11 2C11.7956 2 12.5587 2.31607 13.1213 2.87868C13.6839 3.44129 14 4.20435 14 5V9H19.66C19.9499 8.99672 20.2371 9.0565 20.5016 9.17522C20.7661 9.29393 21.0016 9.46873 21.1919 9.68751C21.3821 9.90629 21.5225 10.1638 21.6033 10.4423C21.6842 10.7207 21.7035 11.0134 21.66 11.3L20.28 20.3C20.2077 20.7769 19.9654 21.2116 19.5979 21.524C19.2304 21.8364 18.7623 22.0055 18.28 22H7M7 11V22M7 11H4C3.46957 11 2.96086 11.2107 2.58579 11.5858C2.21071 11.9609 2 12.4696 2 13V20C2 20.5304 2.21071 21.0391 2.58579 21.4142C2.96086 21.7893 3.46957 22 4 22H7"
-                          stroke="#56C676" stroke-linecap="round" stroke-linejoin="round" />
-                      </svg>
-                    </button>
-                    <button class="reviews-list__dislike active">
-                      <span>5</span>
-                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                          d="M17 13.0004L13 22.0004C12.2044 22.0004 11.4413 21.6843 10.8787 21.1217C10.3161 20.5591 10 19.796 10 19.0004V15.0004H4.34C4.05009 15.0036 3.76294 14.9439 3.49843 14.8251C3.23392 14.7064 2.99839 14.5316 2.80814 14.3128C2.6179 14.0941 2.47749 13.8365 2.39666 13.5581C2.31583 13.2797 2.29649 12.987 2.34 12.7004L3.72 3.70036C3.79232 3.22346 4.03457 2.78875 4.40209 2.47636C4.76962 2.16396 5.23767 1.99491 5.72 2.00036H17M17 13.0004V2.00036M17 13.0004H19.67C20.236 13.0104 20.7859 12.8122 21.2154 12.4435C21.6449 12.0749 21.9241 11.5613 22 11.0004V4.00036C21.9241 3.43942 21.6449 2.92586 21.2154 2.55718C20.7859 2.1885 20.236 1.99035 19.67 2.00036H17"
-                          stroke="#FF3D00" stroke-linecap="round" stroke-linejoin="round" />
-                      </svg>
-                    </button>
-                  </div>
+              <div class="reviews-list__bottom">
+                <div class="reviews-list__rate">
+                  <div class="rateYo"></div>
+                  <div class="counter">5.0</div>
                 </div>
-                <button class="btn" data-fancybox data-src="#modal-2">Подать апеляцию</button>
+                <div class="reviews-list__likes">
+                  <button class="reviews-list__like">
+                    <span>24</span>
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M7 11L11 2C11.7956 2 12.5587 2.31607 13.1213 2.87868C13.6839 3.44129 14 4.20435 14 5V9H19.66C19.9499 8.99672 20.2371 9.0565 20.5016 9.17522C20.7661 9.29393 21.0016 9.46873 21.1919 9.68751C21.3821 9.90629 21.5225 10.1638 21.6033 10.4423C21.6842 10.7207 21.7035 11.0134 21.66 11.3L20.28 20.3C20.2077 20.7769 19.9654 21.2116 19.5979 21.524C19.2304 21.8364 18.7623 22.0055 18.28 22H7M7 11V22M7 11H4C3.46957 11 2.96086 11.2107 2.58579 11.5858C2.21071 11.9609 2 12.4696 2 13V20C2 20.5304 2.21071 21.0391 2.58579 21.4142C2.96086 21.7893 3.46957 22 4 22H7"
+                        stroke="#56C676" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                  </button>
+                  <button class="reviews-list__dislike">
+                    <span>5</span>
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M17 13.0004L13 22.0004C12.2044 22.0004 11.4413 21.6843 10.8787 21.1217C10.3161 20.5591 10 19.796 10 19.0004V15.0004H4.34C4.05009 15.0036 3.76294 14.9439 3.49843 14.8251C3.23392 14.7064 2.99839 14.5316 2.80814 14.3128C2.6179 14.0941 2.47749 13.8365 2.39666 13.5581C2.31583 13.2797 2.29649 12.987 2.34 12.7004L3.72 3.70036C3.79232 3.22346 4.03457 2.78875 4.40209 2.47636C4.76962 2.16396 5.23767 1.99491 5.72 2.00036H17M17 13.0004V2.00036M17 13.0004H19.67C20.236 13.0104 20.7859 12.8122 21.2154 12.4435C21.6449 12.0749 21.9241 11.5613 22 11.0004V4.00036C21.9241 3.43942 21.6449 2.92586 21.2154 2.55718C20.7859 2.1885 20.236 1.99035 19.67 2.00036H17"
+                        stroke="#FF3D00" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+              <div class="reviews-list__status">
+                <div class="reviews-list__status-viewing">
+                  На рассмотрении
+                </div>
+                <a href="#" class="btn-underborder">Подробнее</a>
               </div>
             </li>
           </ul>
+          <button class="btn-underborder btn-underborder--show">
+            Показать еще
+          </button>
         </div>
       </section>
 
@@ -821,7 +830,7 @@
         </button>
       </form>
       <button class="modal__button-add">
-        Приложить файл 
+        Приложить файл
         <span class="modal__button-span">
           <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path
@@ -841,8 +850,8 @@
         Апеляция успешно отправлена
       </h6>
       <p>
-        Ваша апеляция отправлена в систему тикетов. Мы рассмотрим апеляцию и дадим ответ.  <br>
-        Вы можете посмотреть апеляцию на странице всех апецляций <a href="#">перейдя по ссылке</a> 
+        Ваша апеляция отправлена в систему тикетов. Мы рассмотрим апеляцию и дадим ответ. <br>
+        Вы можете посмотреть апеляцию на странице всех апецляций <a href="#">перейдя по ссылке</a>
       </p>
     </div>
   </div>
