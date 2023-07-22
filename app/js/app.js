@@ -42,7 +42,7 @@ $(function () {
     minimumResultsForSearch: -1
   });
 
-  $(".offers").select2({
+  $(".conection-offers").select2({
     minimumResultsForSearch: -1
   });
 
