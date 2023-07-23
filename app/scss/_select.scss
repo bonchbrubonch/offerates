@@ -71,7 +71,8 @@
 .select2-container--default .select2-results__option--highlighted.select2-results__option--selectable,
 .select2-container--default .select2-results__option--selected {
   background-color: #242323 !important;
-  &:hover{
+
+  &:hover {
     color: #56C676 !important;
   }
 }
@@ -104,6 +105,49 @@
   color: #fff;
 }
 
+.select2-container--default .select2-results>.select2-results__options {
+  max-height: 400px;
+  overflow-y: auto;
+}
+
 .select2-container--default .select2-results>.select2-results__options li:nth-child(1) {
   padding-top: 0 !important;
+}
+
+.offers__filter-country {
+  .select2-selection__rendered span {
+    display: flex;
+    align-items: center;
+
+    img {
+      margin: 0 8px 0 0;
+      width: 24px;
+      height: auto;
+      object-fit: contain;
+    }
+  }
+
+
+
+  .select2-results__option--selectable span {
+    display: flex !important;
+    align-items: center !important;
+  }
+}
+
+.select2-dropdown {
+
+  img {
+    margin: 0 8px 0 0;
+    width: 24px;
+    height: auto;
+    object-fit: contain;
+  }
+}
+
+.select2-results__option.select2-results__option--selectable {
+  span {
+    display: flex;
+    align-items: center;
+  }
 }

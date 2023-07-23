@@ -21,8 +21,20 @@ $(function () {
     minimumResultsForSearch: -1
   });
 
-  $(".country").select2({
+  function formatState(state) {
+    if (!state.id) {
+      return state.text;
+    }
+    var $state = $(
+      '<span><img src="' + $(state.element).attr('data-src') + '" class="img-flag" /> ' + state.text + '</span>'
+    );
+    return $state;
+  };
 
+  $(".country").select2({
+    minimumResultsForSearch: Infinity,
+    templateResult: formatState,
+    templateSelection: formatState
   });
 
   $(".form-select").select2({
@@ -45,7 +57,6 @@ $(function () {
   $(".conection-offers").select2({
     minimumResultsForSearch: -1
   });
-
 
   $('.offers__bottom-like').on('click', function () {
     $(this).toggleClass('active');
