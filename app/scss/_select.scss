@@ -118,16 +118,7 @@
   .select2-selection__rendered span {
     display: flex;
     align-items: center;
-
-    img {
-      margin: 0 8px 0 0;
-      width: 24px;
-      height: auto;
-      object-fit: contain;
-    }
   }
-
-
 
   .select2-results__option--selectable span {
     display: flex !important;
@@ -135,15 +126,14 @@
   }
 }
 
-.select2-dropdown {
-
-  img {
-    margin: 0 8px 0 0;
-    width: 24px;
-    height: auto;
-    object-fit: contain;
-  }
+.img-flag {
+  margin: 0 8px 0 0;
+  width: 24px;
+  height: auto;
+  object-fit: contain;
+  border-radius: 2px;
 }
+
 
 .select2-results__option.select2-results__option--selectable {
   span {
