@@ -32,7 +32,7 @@ $(function () {
   };
 
   $(".country").select2({
-    minimumResultsForSearch: Infinity,
+    // minimumResultsForSearch: Infinity,
     templateResult: formatState,
     templateSelection: formatState
   });
