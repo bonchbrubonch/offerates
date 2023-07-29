@@ -165,7 +165,76 @@
   &__exit-mob {
     display: none;
   }
+
+  &__currency,
+  &__languege {
+    color: #fff;
+    line-height: 48px;
+  }
+
+  &__currency-child,
+  &__languege-child {
+    padding: 0 20px 0 13px;
+    position: relative;
+    height: 48px;
+    border-radius: 8px;
+    border: 1px solid #383838;
+    background-color: #1f1f1f;
+    cursor: pointer;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      right: 10px;
+      background-image: url("../images/dest/icons/arrow.svg");
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center;
+      width: 24px;
+      height: 24px;
+    }
+
+    &:hover {
+
+      .header__currency-dropdown,
+      .header__languege-dropdown {
+
+        z-index: 10;
+        border-radius: 8px;
+        border: 1px solid #383838;
+        background-color: #1f1f1f;
+        width: 100%;
+        left: 0;
+        top: 48px;
+        padding: 0 0 0 13px;
+      }
+      .header__currency-dropdown-wrap,
+      .header__languege-dropdown-wrap {
+        display: block;
+        z-index: 10;
+        width: 100%;
+        left: 0;
+        top: 39px;
+        padding: 13px 0 0 0;
+      }
+    }
+  }
+  &__currency-dropdown-wrap,
+  &__languege-dropdown-wrap{
+    position: absolute;
+    display: none;
+  }
+  &__currency-dropdown,
+  &__languege-dropdown {
+   
+    li:hover{
+      color: #56c676;
+    }
+  }
 }
+
 
 /*end header========*/
 
@@ -2032,7 +2101,7 @@
     width: 84px;
     height: 48px;
     border-radius: 24px;
-    border: 2px solid  #F04520;
+    border: 2px solid #F04520;
     background-color: transparent;
     cursor: pointer;
     outline: none;

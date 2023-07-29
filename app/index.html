@@ -46,21 +46,42 @@
                     stroke="white" stroke-linecap="round" stroke-linejoin="round" />
                 </svg>
               </a>
-              <div class="header__currency select">
-                <select class="currency" id="currency" required name="currency">
-                  <option>USD</option>
-                  <option>EUR</option>
-                  <option>UAH</option>
-                  <option>TNG</option>
-                </select>
-              </div>
-              <div class="header__languege select">
-                <select class="language" id="language" required name="language">
-                  <option>RU</option>
-                  <option>UA</option>
-                  <option>EN</option>
-                </select>
-              </div>
+              <ul class="header__currency">
+                <li class="header__currency-child">
+                  <span>USD</span>
+                  <div class="header__currency-dropdown-wrap">
+                    <ul class="header__currency-dropdown">
+                      <li>
+                        <a href="#">USD</a>
+                      </li>
+                      <li>
+                        <a href="#">EUR</a>
+                      </li>
+                      <li>
+                        <a href="#">UAH</a>
+                      </li>
+                      <li>
+                        <a href="#">TNG</a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+              <ul class="header__languege">
+                <li class="header__languege-child">
+                  <span>RU</span>
+                  <div class="header__languege-dropdown-wrap">
+                    <ul class="header__languege-dropdown">
+                      <li>
+                        <a href="#">UA</a>
+                      </li>
+                      <li>
+                        <a href="#">EN</a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
               <button class="header__enter btn" data-fancybox data-src="#modal-1">
                 Войти
               </button>
