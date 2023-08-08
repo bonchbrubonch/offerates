@@ -170,6 +170,11 @@
   &__languege {
     color: #fff;
     line-height: 48px;
+    a{
+      display: block;
+      max-width: 100%;
+      width: 100%;
+    }
   }
 
   &__currency-child,
