@@ -467,7 +467,8 @@
   .offers__top-column:nth-child(2),
   .offers__top-column:nth-child(3),
   .offers__top-column:nth-child(4),
-  .offers__top-column:nth-child(5) {
+  .offers__top-column:nth-child(5),
+  .networks--offers .offers__top-column:nth-child(1) {
     font-size: 12px;
     padding: 0 5px 0 6px;
     max-width: 102px;
@@ -1120,6 +1121,7 @@
   .links__item-box {
     max-width: calc(100% - 84px);
   }
+
 }
 
 @media (max-width: 700px) {
@@ -1294,6 +1296,17 @@
   .offers__row-img,
   .offers__row-link {
     max-width: 33%;
+  }
+
+  .networks.networks--offers {
+
+    .offers__row-percent,
+    .offers__row-epc,
+    .offers__row-rate,
+    .offers__row-img,
+    .offers__row-link {
+      max-width: 33%;
+    }
   }
 
   .offers__row {
@@ -1974,6 +1987,32 @@
     margin: 0 0 16px 0;
     width: 100%;
   }
+
+  .networks--offers .offers__top-column:nth-child(5) {
+    display: none;
+  }
+
+  .networks--offers .offers__top-column:nth-child(2) {
+    display: block;
+    max-width: 33%;
+    width: 100%;
+  }
+
+  .networks--offers .offers__top-column:nth-child(3) {
+
+    max-width: 33%;
+    width: 100%;
+  }
+
+  .networks--offers .offers__top-column:nth-child(4) {
+
+    max-width: 33%;
+    width: 100%;
+  }
+
+  .networks--offers .offers__row {
+    border-radius: 12px;
+  }
 }
 
 @media (max-width: 450px) {
@@ -2019,6 +2058,9 @@
         right: 95px;
       }
     }
+  }
+  .offers__bottom-close{
+    font-size: 14px;
   }
 }
 
