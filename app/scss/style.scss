@@ -693,12 +693,12 @@
     }
 
     .networks__item-target {
-      max-width: 223px;
+      max-width: 300px;
       width: 100%;
     }
 
     .offers__row-link {
-      max-width: 223px;
+      max-width: 90px;
       width: 100%;
     }
   }
@@ -1250,9 +1250,12 @@
       }
 
       span {
+        max-width: 80px;
+        flex-shrink: 0;
         display: block;
         margin: 0 0 0 5px;
         color: #56C676;
+        text-align: right;
       }
     }
   }
