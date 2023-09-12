@@ -30,7 +30,7 @@ $(function () {
     );
     return $state;
   };
-
+  
   $(".country").select2({
     // minimumResultsForSearch: Infinity,
     templateResult: formatState,

@@ -2069,6 +2069,10 @@
 .connection {
   padding: 0 0 40px 0;
 
+  .offers__filter-country {
+    width: 100%;
+  }
+
   .border-left {
     margin: 0 0 25px 0;
     padding: 23px 0 23px 27px;
@@ -2108,16 +2112,23 @@
     }
 
   }
-
+  &__top{
+    display: flex;
+    width: 100%;
+    align-items: flex-end;
+  }
   &__top-box {
+    width: 100%;
     margin: 24px 0 0 0;
     display: flex;
+    align-items: flex-end;
   }
-
+  &__input-large{
+    width: calc(33.33333% - 24px);
+  }
   &__select {
     margin: 0 24px 0 0;
-    max-width: 395px;
-    width: 100%;
+    width: calc(33.33333% - 24px);
 
     &>span {
       display: block;
@@ -2129,8 +2140,13 @@
   }
 
   .btn {
-    margin: 25px 0 0 auto;
+    width: 84px;
     padding: 11.5px 29.5px;
+    height: 48px;
+
+    span {
+      display: none;
+    }
   }
 }
 

@@ -418,9 +418,6 @@
   .reviews__list-filter {
     margin: 0 0 25px 0;
   }
-
-
-
 }
 
 @media (max-width: 900px) {
@@ -1122,6 +1119,13 @@
     max-width: calc(100% - 84px);
   }
 
+  .img-flag {
+    height: 7px;
+  }
+
+  .connection .select .select2-container--default .select2-selection--single .select2-selection__arrow {
+    right: 0;
+  }
 }
 
 @media (max-width: 700px) {
@@ -2013,6 +2017,33 @@
   .networks--offers .offers__row {
     border-radius: 12px;
   }
+
+  .connection .btn {
+    img {
+      margin: 0 10px 0 0;
+    }
+
+    span {
+      display: block;
+    }
+  }
+
+  .connection__select,
+  .connection__input-large {
+    width: 100%;
+  }
+
+  .connection__top {
+    flex-direction: column;
+  }
+
+  .connection .select .select2-container--default .select2-selection--single .select2-selection__arrow {
+    right: 10px;
+  }
+
+  .img-flag {
+    height: 17px;
+  }
 }
 
 @media (max-width: 450px) {
@@ -2059,7 +2090,8 @@
       }
     }
   }
-  .offers__bottom-close{
+
+  .offers__bottom-close {
     font-size: 14px;
   }
 }

@@ -105,6 +105,29 @@
   color: #fff;
 }
 
+.select2-container--open .select2-dropdown--below {
+  padding: 15px 10px 0 0;
+
+  ::-webkit-scrollbar {
+    height: 10px;
+    width: 2px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-color: #56C676;
+    border-radius: 5px;
+    width: 2px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background-color: transparent;
+    border: 1px solid #838383;
+    border-radius: 5px;
+    width: 2px;
+    margin: 0 0 30px 0;
+  }
+}
+
 .select2-container--default .select2-results>.select2-results__options {
   max-height: 400px;
   overflow-y: auto;
@@ -126,12 +149,18 @@
   }
 }
 
+.offers__filter-country .select2-selection__rendered span {
+  padding: 0 10px 0 0;
+}
+
 .img-flag {
   margin: 0 8px 0 0;
-  width: 24px;
-  height: auto;
+  width: auto;
+  height: 18px;
   object-fit: contain;
   border-radius: 2px;
+  overflow: hidden;
+  flex-shrink: 0;
   overflow: hidden;
 }
 
