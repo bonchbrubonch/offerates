@@ -162,9 +162,49 @@
     justify-content: space-between;
   }
 
+  &__avatar-wrap {
+    display: flex;
+  }
+
+  &__offer-network {
+    margin: 0 0 0 15px;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+
+    .reviews-list__img {
+      margin: 0 15px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 80px;
+      height: 32px;
+      background-color: #fff;
+      border-radius: 4px;
+      overflow: hidden;
+
+      img {
+        width: 85%;
+        height: 85%;
+        object-fit: contain;
+      }
+    }
+    .reviews-list__name{
+      word-break:break-all;
+    }
+  }
+
   &__avatar {
     display: flex;
     align-items: center;
+
+    span {
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 20px;
+    }
   }
 
   &__avatar-img {
@@ -172,24 +212,24 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 32px;
-    height: 32px;
+    width: 24px;
+    height: 24px;
     flex-shrink: 0;
     background-color: #3B4653;
     border-radius: 50%;
     overflow: hidden;
 
     img {
-      width: 20px;
-      height: 20px;
+      width: 16px;
+      height: 16px;
       object-fit: contain;
     }
   }
 
   &__date {
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 400;
-    line-height: 24px;
+    line-height: 20px;
   }
 
   p {
@@ -272,28 +312,32 @@
     justify-content: space-between;
     align-items: center;
   }
-  &__status-viewing{
+
+  &__status-viewing {
     margin: 0 20px 0 0;
     border-radius: 8px;
-    padding: 14.5px 32px;
+    padding: 14.5px 16px;
     color: #F0B020;
     background-color: rgba(240, 176, 32, 0.20);
   }
-  &__status-resolved{
+
+  &__status-resolved {
     margin: 0 20px 0 0;
     border-radius: 8px;
     padding: 14.5px 32px;
     color: #56C676;
     background-color: rgba(86, 198, 118, 0.20);
   }
-  &__status-refusal{
+
+  &__status-refusal {
     margin: 0 20px 0 0;
     border-radius: 8px;
     padding: 14.5px 32px;
     color: #F04520;
     background-color: rgba(240, 69, 32, 0.20);
   }
-  &__status-deleted{
+
+  &__status-deleted {
     margin: 0 20px 0 0;
     border-radius: 8px;
     padding: 14.5px 32px;

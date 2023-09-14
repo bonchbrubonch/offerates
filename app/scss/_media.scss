@@ -857,7 +857,7 @@
   }
 
   .account-links {
-    margin: 0 0 53px -13px;
+    margin: 0 0 53px 0;
   }
 
   .account-intro__img {
@@ -2043,6 +2043,59 @@
 
   .img-flag {
     height: 17px;
+  }
+
+  .AccLinks-wrap {
+    flex-direction: column;
+  }
+
+  .account-links {
+    margin: 0 0 42px 0;
+  }
+
+  .AccLinks-wrap {
+    .offers__filter-country {
+      margin: 0 0 25px 0;
+    }
+  }
+
+  .reviews-list__top {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .reviews-list__date {
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 18px;
+    margin: 15px 0 0;
+  }
+
+  .reviews-list__top {
+    margin: 0 0 16px 0;
+  }
+
+  .reviews-list__avatar span,
+  .reviews-list__name {
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 18px;
+  }
+
+  .reviews-list__offer-network .reviews-list__img {
+    margin: 0 10px;
+    width: 56px;
+    height: 24px;
+  }
+
+  .reviews-list__offer-network {
+    margin: 0 0 0 10px;
+  }
+
+  .connection__top--network .connection__input-large,
+  .connection__top--network .connection__select,
+  .links--networks .links__col-wrap {
+    width: 100%;
   }
 }
 

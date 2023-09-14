@@ -17,6 +17,7 @@ $(function () {
   $(".currency").select2({
     minimumResultsForSearch: -1
   });
+
   $(".language").select2({
     minimumResultsForSearch: -1
   });
@@ -56,6 +57,19 @@ $(function () {
 
   $(".conection-offers").select2({
     minimumResultsForSearch: -1
+  });
+
+
+  $(".offer-name").select2({
+    placeholder: "Offer name",
+    templateResult: formatState,
+    templateSelection: formatState
+  });
+
+  $(".network-name").select2({
+    placeholder: "Network name",
+    templateResult: formatState,
+    templateSelection: formatState
   });
 
   $('.offers__bottom-like').on('click', function () {
