@@ -1677,7 +1677,7 @@
 }
 
 .account-intro {
-  padding: 0 0 40px 0;
+  padding: 0 0 24px 0;
 
   &__inner {
     display: flex;
@@ -1773,7 +1773,141 @@
       }
     }
   }
+
+  input {
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid #383838;
+    background-color: #1f1f1f;
+    height: 48px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 100%;
+    outline: 0;
+    color: #fff;
+    width: 100%;
+
+    &::placeholder {
+      color: rgba(#fff, .5);
+    }
+  }
+
+  &__right-input {
+    margin: 0 0 20px 0;
+
+    input {
+      padding: 15px;
+      border-radius: 8px;
+      border: 1px solid #383838;
+      background-color: #1f1f1f;
+      height: 48px;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 100%;
+      outline: 0;
+      color: #fff;
+      width: 100%;
+
+      &::placeholder {
+        color: rgba(#fff, .5);
+      }
+    }
+  }
 }
+
+/*start networks-options=============*/
+.networks-options {
+  padding: 0 0 40px 0;
+  input {
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid #383838;
+    background-color: #1f1f1f;
+    height: 48px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 100%;
+    outline: 0;
+    color: #fff;
+    width: 100%;
+
+    &::placeholder {
+      color: #fff;
+    }
+  }
+
+  h6 {
+    margin: 0 0 25px 0;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+  }
+
+  &__top-wrap {
+    margin: 0 0 0 -25px;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+
+  &__top-col {
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 25px 25px;
+    width: calc(25% - 25px);
+
+    span {
+      display: block;
+      margin: 0 0 5px 0;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 16px;
+    }
+  }
+  .offers__filter-country{
+    margin: 0;
+    width: 100%;
+  }
+  .connection__select{
+    margin: 0;
+  }
+  .connection__top-box{
+    margin: 0 0 0 -24px;
+    width: calc(100% + 24px) !important;
+  }
+  .connection__top-box + button {
+    margin: 0 0 0 24px;
+    padding: 13.5px 30.5px;
+    width: 84px;
+    height: 48px;
+    flex-shrink: 0;
+    span{
+      display: none;
+    }
+  }
+  .connection__top{
+    margin: 0 0 24px 0;
+  }
+  .connection__select,
+  .connection__input-large{
+    width: calc(50% - 24px);
+    margin: 0 0 0 24px;
+  }
+  &__inner{
+    margin: 0 0 24px 0;
+    border-bottom: 1px solid #3B4653;
+  }
+
+  .btn{
+    margin: 0 0 0 auto;
+    padding: 11.5px 30.5px;
+    height: 48px;
+  }
+
+
+
+}
+/*end networks-options=============*/
 
 .account-addLogo {
   max-width: 290px;
@@ -2241,6 +2375,10 @@
     cursor: pointer;
     outline: none;
     flex-shrink: 0;
+    transition: linear .2s;
+    &:hover{
+      background-color: #F04520;
+    }
   }
 }
 

@@ -2097,6 +2097,45 @@
   .links--networks .links__col-wrap {
     width: 100%;
   }
+
+  .networks-options__top-wrap {
+    .networks-options__top-col {
+      width: calc(50% - 25px);
+    }
+  }
+
+  .networks-options .networks-options__top-wrap {
+    .networks-options__top-col {
+      width: calc(50% - 25px);
+    }
+  }
+
+  .networks-options .networks-options__top-wrap.select-col {
+    .networks-options__top-col:first-child {
+      width: 100%;
+    }
+
+    .networks-options__top-col {
+      width: calc(33.33333% - 25px);
+    }
+  }
+
+  .networks-options .connection__top-box {
+    margin: 0 0 0 -24px;
+    flex-direction: initial;
+
+    .connection__input-large,
+    .connection__select {
+      width: calc(50% - 24px);
+    }
+  }
+
+  .networks-options .connection__top-box+button {
+    margin: 24px 0 0 0;
+  }
+  .networks-options .btn{
+    width: 100%;
+  }
 }
 
 @media (max-width: 450px) {

@@ -33,7 +33,6 @@ $(function () {
   };
   
   $(".country").select2({
-    // minimumResultsForSearch: Infinity,
     templateResult: formatState,
     templateSelection: formatState
   });
@@ -71,6 +70,16 @@ $(function () {
     templateResult: formatState,
     templateSelection: formatState
   });
+
+  $(".network-name2").select2({
+    placeholder: "Название",
+  });
+
+  $(".networks-options__target").select2({
+    placeholder: "Название",
+  });
+
+
 
   $('.offers__bottom-like').on('click', function () {
     $(this).toggleClass('active');
