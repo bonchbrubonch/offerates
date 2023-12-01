@@ -1818,6 +1818,7 @@
 /*start networks-options=============*/
 .networks-options {
   padding: 0 0 40px 0;
+
   input {
     padding: 15px;
     border-radius: 8px;
@@ -1864,41 +1865,49 @@
       line-height: 16px;
     }
   }
-  .offers__filter-country{
+
+  .offers__filter-country {
     margin: 0;
     width: 100%;
   }
-  .connection__select{
+
+  .connection__select {
     margin: 0;
   }
-  .connection__top-box{
+
+  .connection__top-box {
     margin: 0 0 0 -24px;
     width: calc(100% + 24px) !important;
   }
-  .connection__top-box + button {
+
+  .connection__top-box+button {
     margin: 0 0 0 24px;
     padding: 13.5px 30.5px;
     width: 84px;
     height: 48px;
     flex-shrink: 0;
-    span{
+
+    span {
       display: none;
     }
   }
-  .connection__top{
+
+  .connection__top {
     margin: 0 0 24px 0;
   }
+
   .connection__select,
-  .connection__input-large{
+  .connection__input-large {
     width: calc(50% - 24px);
     margin: 0 0 0 24px;
   }
-  &__inner{
+
+  &__inner {
     margin: 0 0 24px 0;
     border-bottom: 1px solid #3B4653;
   }
 
-  .btn{
+  .btn {
     margin: 0 0 0 auto;
     padding: 11.5px 30.5px;
     height: 48px;
@@ -1907,6 +1916,7 @@
 
 
 }
+
 /*end networks-options=============*/
 
 .account-addLogo {
@@ -2376,7 +2386,8 @@
     outline: none;
     flex-shrink: 0;
     transition: linear .2s;
-    &:hover{
+
+    &:hover {
       background-color: #F04520;
     }
   }
@@ -2401,7 +2412,71 @@
   }
 }
 
+.connection--top {
+  padding: 0 0 24px 0;
+}
 
+.btn-add {
+  position: relative;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 18px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+  }
+
+  &::after {
+    transform: translate(-50%, -50%) rotate(90deg);
+  }
+}
+
+.connection__top-options {
+  margin: 0 0 0 -24px;
+
+  .links__item-currency {
+    width: 85px;
+  }
+  .offers__filter-country{
+    margin: 0;
+  }
+  .connection__select {
+    margin: 0 0 0 24px !important;
+  }
+
+  .connection__select {
+    margin: 0 24px 0 0;
+    width: calc(50% - 75px);
+  }
+
+  .links__col-wrap {
+    margin: 0 0 0 24px;
+    width: 85px;
+  }
+}
+.links__item--options{
+  margin: 30px 0 15px 0;
+  .links__item-box{
+    max-width: 100%;
+  }
+}
+.filters__save{
+  padding: 24px 0;
+  border-top: 1px solid #3B4653;
+  .btn{
+    margin: 0 0 0 auto;
+  }
+}
+.filters{
+  .btn img{
+    display: none;
+  }
+}
 /*start footer============*/
 .footer {
   padding: 80px 0 100px;

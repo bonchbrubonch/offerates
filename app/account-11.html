@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css"
+    integrity="sha512-H9jrZiiopUdsLpg94A333EfumgUBpO9MdbxStdeITo+KEIMaNfHNvwyjjDJb+ERPaRS6DpyRlKbvPUasNItRyw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/rateYo/2.3.2/jquery.rateyo.min.css">
+
+  <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+    integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+  <link rel="stylesheet" href="css/app.min.css">
+</head>
+
+<body class="page-account page-account--short-bg">
+  <div class="wrapper">
+    <div class="content" style="background-image: url('images/dest/content/bg-404.png');">
+      <header class="header header--enter">
+        <div class="container">
+          <div class="header__inner">
+            <a href="#" class="header__logo">
+              <img src="images/dest/icons/logo.svg" alt="logo">
+            </a>
+            <div class="header__box">
+              <button class="header__box-close"></button>
+              <a href="#" class="header__logo-mob">
+                <img src="images/dest/icons/logo.svg" alt="logo">
+              </a>
+              <a href="#" class="header__all-offers link-active">Все офферы</a>
+              <a href="#" class="header__all-soc">Все сети</a>
+              <a href="#" class="header__favorite">
+                <span>Избранное</span>
+                <svg width="22" height="20" viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M19.84 2.60999C19.3292 2.099 18.7228 1.69364 18.0554 1.41708C17.3879 1.14052 16.6725 0.998169 15.95 0.998169C15.2275 0.998169 14.5121 1.14052 13.8446 1.41708C13.1772 1.69364 12.5708 2.099 12.06 2.60999L11 3.66999L9.94 2.60999C8.9083 1.5783 7.50903 0.998704 6.05 0.998704C4.59096 0.998704 3.19169 1.5783 2.16 2.60999C1.1283 3.64169 0.548706 5.04096 0.548706 6.49999C0.548706 7.95903 1.1283 9.3583 2.16 10.39L3.22 11.45L11 19.23L18.78 11.45L19.84 10.39C20.351 9.87924 20.7563 9.27281 21.0329 8.60535C21.3095 7.93789 21.4518 7.22248 21.4518 6.49999C21.4518 5.77751 21.3095 5.0621 21.0329 4.39464C20.7563 3.72718 20.351 3.12075 19.84 2.60999Z"
+                    stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </a>
+              <div class="header__currency select">
+                <select class="currency" id="currency" required name="currency">
+                  <option>USD</option>
+                  <option>EUR</option>
+                  <option>UAH</option>
+                  <option>TNG</option>
+                </select>
+              </div>
+              <div class="header__languege select">
+                <select class="language" id="language" required name="language">
+                  <option>RU</option>
+                  <option>UA</option>
+                  <option>EN</option>
+                </select>
+              </div>
+              <button class="header__exit">
+                <span class="header__avatar">
+                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M16.6667 17.5V15.8333C16.6667 14.9493 16.3155 14.1014 15.6904 13.4763C15.0653 12.8512 14.2174 12.5 13.3334 12.5H6.66671C5.78265 12.5 4.93481 12.8512 4.30968 13.4763C3.68456 14.1014 3.33337 14.9493 3.33337 15.8333V17.5"
+                      stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+                    <path
+                      d="M9.99996 9.16667C11.8409 9.16667 13.3333 7.67428 13.3333 5.83333C13.3333 3.99238 11.8409 2.5 9.99996 2.5C8.15901 2.5 6.66663 3.99238 6.66663 5.83333C6.66663 7.67428 8.15901 9.16667 9.99996 9.16667Z"
+                      stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                </span>
+                <div class="header__user-name">username123</div>
+                <span class="header__logout">
+                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M7.5 17.5H4.16667C3.72464 17.5 3.30072 17.3244 2.98816 17.0118C2.67559 16.6993 2.5 16.2754 2.5 15.8333V4.16667C2.5 3.72464 2.67559 3.30072 2.98816 2.98816C3.30072 2.67559 3.72464 2.5 4.16667 2.5H7.5"
+                      stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M13.3333 14.1654L17.5 9.9987L13.3333 5.83203" stroke="white" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                    <path d="M17.5 10H7.5" stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                </span>
+              </button>
+            </div>
+
+            <button class="header__menu-btn">
+              <span></span>
+            </button>
+            <button class="header__exit-mob">
+              <span class="header__avatar">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M16.6667 17.5V15.8333C16.6667 14.9493 16.3155 14.1014 15.6904 13.4763C15.0653 12.8512 14.2174 12.5 13.3334 12.5H6.66671C5.78265 12.5 4.93481 12.8512 4.30968 13.4763C3.68456 14.1014 3.33337 14.9493 3.33337 15.8333V17.5"
+                    stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+                  <path
+                    d="M9.99996 9.16667C11.8409 9.16667 13.3333 7.67428 13.3333 5.83333C13.3333 3.99238 11.8409 2.5 9.99996 2.5C8.15901 2.5 6.66663 3.99238 6.66663 5.83333C6.66663 7.67428 8.15901 9.16667 9.99996 9.16667Z"
+                    stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </span>
+              username123
+              <span class="header__logout">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M7.5 17.5H4.16667C3.72464 17.5 3.30072 17.3244 2.98816 17.0118C2.67559 16.6993 2.5 16.2754 2.5 15.8333V4.16667C2.5 3.72464 2.67559 3.30072 2.98816 2.98816C3.30072 2.67559 3.72464 2.5 4.16667 2.5H7.5"
+                    stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M13.3333 14.1654L17.5 9.9987L13.3333 5.83203" stroke="white" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                  <path d="M17.5 10H7.5" stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </span>
+            </button>
+          </div>
+        </div>
+      </header>
+
+      <div class="page-title">
+        <div class="container">
+          <h2>Аккаунт рекламодателя</h2>
+        </div>
+      </div>
+
+      <div class="breadcrumbs">
+        <div class="container">
+          <div class="breadcrumbs__inner">
+            <ul class="breadcrumbs__list">
+              <li><a href="#">Главная</a></li>
+              <li><a href="#">Аккаунт рекламодателя</a></li>
+              <li><span>Офферы</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <ul class="account-links">
+          <li>
+            <a href="#">Компания</a>
+          </li>
+          <li>
+            <a href="#">Отзывы</a>
+          </li>
+          <li class="account-link-active">
+            <a href="#">Офферы</a>
+          </li>
+          <li>
+            <a href="#">Сети</a>
+          </li>
+        </ul>
+      </div>
+
+      <section class="filters">
+        <div class="connection connection--top ">
+          <div class="container">
+            <h4 class="border-left">
+              Cвязь между офером и сетью
+            </h4>
+            <div class="connection__top connection__top-options">
+              <div class="connection__top-box">
+                <div class="connection__select  offers__filter-mob">
+                  <span>Добавьте оффер из списка</span>
+                  <div class="offers__filter-country">
+                    <div class="select">
+                      <select class="offer-name" id="network" required name="offer-name">
+                        <option></option>
+                        <option data-src="images/dest/content/offers/offer-1.jpg">Network name1</option>
+                        <option data-src="images/dest/content/offers/offer-2.jpg">Network name2</option>
+                        <option data-src="images/dest/content/offers/offer-3.jpg">Network name3</option>
+                        <option data-src="images/dest/content/offers/offer-4.jpg">Network name</option>
+                        <option data-src="images/dest/content/offers/offer-1.jpg">Network name</option>
+                        <option data-src="images/dest/content/offers/offer-1.jpg">Network name</option>
+                        <option data-src="images/dest/content/offers/offer-1.jpg">Network name</option>
+                        <option data-src="images/dest/content/offers/offer-1.jpg">Network name</option>
+                        <option data-src="images/dest/content/offers/offer-1.jpg">Network name</option>
+                        <option data-src="images/dest/content/offers/offer-1.jpg">Network name</option>
+                        <option data-src="images/dest/content/offers/offer-1.jpg">Network name</option>
+                        <option data-src="images/dest/content/offers/offer-1.jpg">Network name</option>
+                        <option data-src="images/dest/content/offers/offer-1.jpg">Network name</option>
+                        <option data-src="images/dest/content/offers/offer-1.jpg">Network name</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <div class="links__col-wrap">
+                  <span>Валюта </span>
+                  <div class="links__item-col links__item-currency">USD</div>
+                </div>
+                <div class="connection__select">
+                  <span>Выберите сеть из списка</span>
+                  <div class="offers__filter-country">
+                    <div class="select">
+                      <select class="network-name" id="offer" required name="network-name">
+                        <option></option>
+                        <option data-src="images/dest/content/offers/offer-1.jpg">Offer name1</option>
+                        <option data-src="images/dest/content/offers/offer-1.jpg">Offer name2</option>
+                        <option data-src="images/dest/content/offers/offer-1.jpg">Offer name3</option>
+                        <option data-src="images/dest/content/offers/offer-1.jpg">Offer name</option>
+                        <option data-src="images/dest/content/offers/offer-1.jpg">Offer name</option>
+                        <option data-src="images/dest/content/offers/offer-1.jpg">Offer name</option>
+                        <option data-src="images/dest/content/offers/offer-1.jpg">Offer name</option>
+                        <option data-src="images/dest/content/offers/offer-1.jpg">Offer name</option>
+                        <option data-src="images/dest/content/offers/offer-1.jpg">Offer name</option>
+                        <option data-src="images/dest/content/offers/offer-1.jpg">Offer name</option>
+                        <option data-src="images/dest/content/offers/offer-1.jpg">Offer name</option>
+                        <option data-src="images/dest/content/offers/offer-1.jpg">Offer name</option>
+                        <option data-src="images/dest/content/offers/offer-1.jpg">Offer name</option>
+                        <option data-src="images/dest/content/offers/offer-1.jpg">Offer name</option>
+                        <option data-src="images/dest/content/offers/offer-1.jpg">Offer name</option>
+                        <option data-src="images/dest/content/offers/offer-1.jpg">Offer name</option>
+                        <option data-src="images/dest/content/offers/offer-1.jpg">Offer name</option>
+                        <option data-src="images/dest/content/offers/offer-1.jpg">Offer name</option>
+                        <option data-src="images/dest/content/offers/offer-1.jpg">Offer name</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="links__item links__item--options">
+              <div class="links__item-box">
+                <div class="links__col-wrap connection__input-inner">
+                  <span>CR в сети</span>
+                  <input type="text" placeholder="CR">
+                </div>
+                <div class="links__col-wrap connection__input-inner">
+                  <span>EPC в сети</span>
+                  <input type="text" placeholder="EPC">
+                </div>
+                <div class="links__col-wrap connection__input-inner">
+                  <span>Ставка в сети</span>
+                  <input type="text" placeholder="Ставка">
+                </div>
+
+              </div>
+            </div>
+            <div class="connection__top connection__top--network">
+              <div class="connection__top-box">
+                <div class="connection__select">
+                  <span>Цель в сети</span>
+                  <div class="offers__filter-country">
+                    <div class="select">
+                      <select class="target" id="target" required name="target">
+                        <option>Продажа</option>
+                        <option>Network name12</option>
+                        <option>Network name13</option>
+                        <option>Network name14</option>
+                        <option>Network name51</option>
+                        <option>Network name61</option>
+                        <option>Network name17</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <div class="connection__input-large">
+                  <span>Cтоимость</span>
+                  <div class="connection__input-inner">
+                    <input type="text" placeholder="Введите значение">
+                  </div>
+                </div>
+              </div>
+              <button class="btn btn-add"></button>
+            </div>
+          </div>
+        </div>
+
+        <div class="links links--networks">
+          <div class="container">
+            <div class="links__item">
+              <div class="links__item-box">
+                <div class="links__col-wrap">
+                  <span>Цель в сети</span>
+                  <div class="links__item-col">Продажа</div>
+                </div>
+                <div class="links__col-wrap">
+                  <span>Cтоимость</span>
+                  <div class="links__item-col">100 USD</div>
+                </div>
+              </div>
+              <button class="links__btn">
+                <img src="images/dest/icons/basket.svg" alt="icon">
+              </button>
+            </div>
+            <div class="links__item">
+              <div class="links__item-box">
+                <div class="links__col-wrap">
+                  <span>Цель в сети</span>
+                  <div class="links__item-col">Продажа</div>
+                </div>
+                <div class="links__col-wrap">
+                  <span>Cтоимость</span>
+                  <div class="links__item-col">100 USD</div>
+                </div>
+              </div>
+              <button class="links__btn">
+                <img src="images/dest/icons/basket.svg" alt="icon">
+              </button>
+            </div>
+            <div class="links__item">
+              <div class="links__item-box">
+                <div class="links__col-wrap">
+                  <span>Цель в сети</span>
+                  <div class="links__item-col">Продажа</div>
+                </div>
+                <div class="links__col-wrap">
+                  <span>Cтоимость</span>
+                  <div class="links__item-col">100 USD</div>
+                </div>
+              </div>
+              <button class="links__btn">
+                <img src="images/dest/icons/basket.svg" alt="icon">
+              </button>
+            </div>
+            <div class="filters__save">
+              <button class="btn"> 
+                <img src="images/dest/icons/save.svg" alt="icon">
+                Сохранить
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="links links--networks">
+        <div class="container">
+          <h6>
+            Мои офферы и сети
+          </h6>
+          <div class="links__item">
+            <div class="links__item-box">
+              <div class="links__col-wrap">
+                <span>Оффер</span>
+                <div class="links__item-col">Offername 1</div>
+              </div>
+              <div class="links__col-wrap">
+                <span>Сеть</span>
+                <div class="links__item-col">Network name</div>
+              </div>
+            </div>
+            <button class="links__btn">
+              <img src="images/dest/icons/basket.svg" alt="icon">
+            </button>
+          </div>
+          <div class="links__item">
+            <div class="links__item-box">
+              <div class="links__col-wrap">
+                <span>Оффер</span>
+                <div class="links__item-col">Offername 1</div>
+              </div>
+              <div class="links__col-wrap">
+                <span>Сеть</span>
+                <div class="links__item-col">Network name</div>
+              </div>
+            </div>
+            <button class="links__btn">
+              <img src="images/dest/icons/basket.svg" alt="icon">
+            </button>
+          </div>
+          <div class="links__item">
+            <div class="links__item-box">
+              <div class="links__col-wrap">
+                <span>Оффер</span>
+                <div class="links__item-col">Offername 1</div>
+              </div>
+              <div class="links__col-wrap">
+                <span>Сеть</span>
+                <div class="links__item-col">Network name</div>
+              </div>
+            </div>
+            <button class="links__btn">
+              <img src="images/dest/icons/basket.svg" alt="icon">
+            </button>
+          </div>
+          <div class="links__item">
+            <div class="links__item-box">
+              <div class="links__col-wrap">
+                <span>Оффер</span>
+                <div class="links__item-col">Offername 1</div>
+              </div>
+              <div class="links__col-wrap">
+                <span>Сеть</span>
+                <div class="links__item-col">Network name</div>
+              </div>
+            </div>
+            <button class="links__btn">
+              <img src="images/dest/icons/basket.svg" alt="icon">
+            </button>
+          </div>
+        </div>
+      </section>
+
+    </div>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__inner">
+          <div class="footer__left">
+            <a href="#" class="footer__logo">
+              <img src="images/dest/icons/logo.svg" alt="logo">
+            </a>
+            <p>
+              Короткое описание о ресурсе на несколько строк. Короткое описание о ресурсе на несколько строк. Короткое
+              описание о ресурсе на несколько строк. Короткое описание о ресурсе на несколько строк. Короткое описание о
+              ресурсе на несколько строк. Короткое описание о ресурсе на несколько строк.
+            </p>
+            <span>
+              © Offerates, 2023. Все права защищены
+            </span>
+          </div>
+          <div class="footer__right">
+            <h6>
+              Навигация
+            </h6>
+            <ul>
+              <li>
+                <a href="#">Главная</a>
+              </li>
+              <li>
+                <a href="#">Все офферы</a>
+              </li>
+              <li>
+                <a href="#">Все партнерские сети</a>
+              </li>
+              <li>
+                <a href="#">Избранное</a>
+              </li>
+              <li>
+                <a href="#">Рекламодателям</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <div class="modal-1" id="modal-1">
+    <div class="modal-inner">
+      <h6>
+        Войдите с помощью соцсетей
+      </h6>
+      <p>
+        Авторизация откроет все возможности платформы
+      </p>
+      <ul>
+        <li>
+          <a href="#" target="_blank">
+            <img src="images/dest/icons/google.svg" alt="icon">
+          </a>
+        </li>
+        <li>
+          <a href="#" target="_blank">
+            <img src="images/dest/icons/apple.svg" alt="icon">
+          </a>
+        </li>
+        <li>
+          <a href="#" target="_blank">
+            <img src="images/dest/icons/facebook.svg" alt="icon">
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+    integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"
+    integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/rateYo/2.3.2/jquery.rateyo.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+    integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <script src="js/app.min.js"></script>
+</body>
+
+</html>

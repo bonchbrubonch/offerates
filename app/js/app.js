@@ -65,6 +65,12 @@ $(function () {
     templateSelection: formatState
   });
 
+  $(".target").select2({
+    // placeholder: "Offer name",
+  });
+
+
+
   $(".network-name").select2({
     placeholder: "Network name",
     templateResult: formatState,
